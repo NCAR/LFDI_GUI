@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "dgSpecHash": "2tjcxScETbHUIPoQwoJyEiGZMWVoscGSYSbcAkcPH9VQFBHCXIrAC44jc/97SH+TobSrXYl3r7FfAdr3d6sY4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mjeffers\\source\\repos\\LFDI Demonstration GUI\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mjeffers\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\opentk.glcontrol\\3.1.0\\opentk.glcontrol.3.1.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\6.0.0\\runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\runtime.native.system.io.ports\\6.0.0\\runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\6.0.0\\runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\scottplot\\5.0.21\\scottplot.5.0.21.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\scottplot.winforms\\5.0.21\\scottplot.winforms.5.0.21.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\skiasharp\\2.88.7\\skiasharp.2.88.7.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.7\\skiasharp.nativeassets.macos.2.88.7.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.7\\skiasharp.nativeassets.win32.2.88.7.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\skiasharp.views.desktop.common\\2.88.7\\skiasharp.views.desktop.common.2.88.7.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\skiasharp.views.windowsforms\\2.88.7\\skiasharp.views.windowsforms.2.88.7.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.drawing.common\\4.7.3\\system.drawing.common.4.7.3.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.io.ports\\6.0.0\\system.io.ports.6.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\mjeffers\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenTK 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenTK.GLControl 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "OpenTK.GLControl",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ScottPlot.WinForms 5.0.21' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "ScottPlot.WinForms",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

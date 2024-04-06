@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>LFDI_Demonstration_GUI</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ScottPlot" Version="5.0.21" />
+    <PackageReference Include="ScottPlot.WinForms" Version="5.0.21" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

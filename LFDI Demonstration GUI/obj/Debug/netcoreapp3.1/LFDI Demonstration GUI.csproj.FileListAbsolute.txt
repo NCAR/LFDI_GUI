@@ -1,0 +1,91 @@
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.exe
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.deps.json
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.runtimeconfig.json
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.runtimeconfig.dev.json
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.pdb
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\OpenTK.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\OpenTK.GLControl.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\ScottPlot.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\ScottPlot.WinForms.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\SkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\SkiaSharp.Views.WindowsForms.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\System.IO.Ports.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.AssemblyReference.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI_Demonstration_GUI.Form1.resources
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.GenerateResource.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.AssemblyInfoInputs.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.AssemblyInfo.cs
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.CoreCompileInputs.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.CopyComplete
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.pdb
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.genruntimeconfig.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.exe
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.deps.json
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.runtimeconfig.json
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.runtimeconfig.dev.json
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\LFDI Demonstration GUI.pdb
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\OpenTK.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\OpenTK.GLControl.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\ScottPlot.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\ScottPlot.WinForms.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\SkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\SkiaSharp.Views.WindowsForms.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\System.IO.Ports.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.AssemblyReference.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI_Demonstration_GUI.Form1.resources
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.GenerateResource.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.AssemblyInfoInputs.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.AssemblyInfo.cs
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.CoreCompileInputs.cache
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.sourcelink.json
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.csproj.CopyComplete
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.dll
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.pdb
+C:\Users\mjeffers\source\repos\LFDI Demonstration GUI\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\netcoreapp3.1\LFDI Demonstration GUI.genruntimeconfig.cache
