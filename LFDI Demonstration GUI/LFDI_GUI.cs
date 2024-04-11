@@ -261,10 +261,7 @@ namespace LFDI_Demonstration_GUI
 
         private void LFDIReturn_Click(object sender, EventArgs e)
         {
-            if (port.IsOpen)
-            {
-                LFDIReturn.Text = port.ReadLine();
-            }
+           
         }
 
         private void TempSetButton_Click(object sender, EventArgs e)
@@ -432,10 +429,20 @@ namespace LFDI_Demonstration_GUI
         {
             //Start a new thread to get the housekeeping data every .5 seconds
             //The Timer should take control of the HeaterDataGrid and CompensatorDataGrid
-            HK_Timer.Elapsed += HK_Tick;
-            HK_Timer.Interval = 500;
-            HK_Timer.Enabled = true;
-            HK_Timer.Start();
+            if (port.IsOpen) {
+                if (!HK_Timer.Enabled) { 
+                    HK_Timer.Elapsed += HK_Tick;
+                    HK_Timer.Interval = 500; // Update Every Half Second
+                    HK_Timer.Enabled = true;
+                    HK_Timer.Start();
+                }
+                else
+                {
+                    HK_Timer.Stop();
+                    HK_Timer.Enabled = false;
+
+                }
+            }
 
         }
 
