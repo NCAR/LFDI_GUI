@@ -1,0 +1,22 @@
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\x86\libSkiaSharp.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\x64\libSkiaSharp.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\arm64\libSkiaSharp.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\libSkiaSharp.dylib
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\LFDI Demonstration GUI.exe
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\LFDI Demonstration GUI.exe.config
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\LFDI Demonstration GUI.pdb
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\OpenTK.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\OpenTK.GLControl.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\ScottPlot.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\ScottPlot.WinForms.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\SkiaSharp.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\SkiaSharp.Views.Desktop.Common.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\SkiaSharp.Views.WindowsForms.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\System.Buffers.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\System.Drawing.Common.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\System.IO.Ports.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\System.Memory.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\System.Numerics.Vectors.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\System.Runtime.CompilerServices.Unsafe.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\System.ValueTuple.dll
+C:\HAO-IG\LFDI\5 - Software\LFDI Demonstration GUI\libSkiaSharp.dll

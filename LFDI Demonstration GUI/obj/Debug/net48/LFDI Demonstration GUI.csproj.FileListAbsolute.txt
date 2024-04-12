@@ -1,0 +1,33 @@
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\x86\libSkiaSharp.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\x64\libSkiaSharp.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\arm64\libSkiaSharp.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\libSkiaSharp.dylib
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\LFDI Demonstration GUI.exe.config
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\LFDI Demonstration GUI.exe
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\LFDI Demonstration GUI.pdb
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\OpenTK.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\OpenTK.GLControl.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\ScottPlot.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\ScottPlot.WinForms.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\SkiaSharp.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\SkiaSharp.Views.WindowsForms.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\System.Buffers.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\System.Drawing.Common.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\System.IO.Ports.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\System.Memory.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\System.Numerics.Vectors.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\System.ValueTuple.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\bin\Debug\net48\libSkiaSharp.dll
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.csproj.AssemblyReference.cache
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI_Demonstration_GUI.LFDI_GUI.resources
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.csproj.GenerateResource.cache
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.AssemblyInfoInputs.cache
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.AssemblyInfo.cs
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.csproj.CoreCompileInputs.cache
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.csproj.CopyComplete
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.exe
+C:\Users\mjeffers\Desktop\Github\LFDI_GUI\LFDI Demonstration GUI\obj\Debug\net48\LFDI Demonstration GUI.pdb

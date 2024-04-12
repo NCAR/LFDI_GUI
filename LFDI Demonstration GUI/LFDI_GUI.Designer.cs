@@ -28,823 +28,811 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            Instrument = new System.Windows.Forms.TabPage();
-            label3 = new System.Windows.Forms.Label();
-            textBox2 = new System.Windows.Forms.TextBox();
-            textBox1 = new System.Windows.Forms.TextBox();
-            label2 = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
-            button1 = new System.Windows.Forms.Button();
-            pictureBox1 = new System.Windows.Forms.PictureBox();
-            Focus = new System.Windows.Forms.TabPage();
-            button4 = new System.Windows.Forms.Button();
-            textBox3 = new System.Windows.Forms.TextBox();
-            label7 = new System.Windows.Forms.Label();
-            label6 = new System.Windows.Forms.Label();
-            label5 = new System.Windows.Forms.Label();
-            button3 = new System.Windows.Forms.Button();
-            button2 = new System.Windows.Forms.Button();
-            label4 = new System.Windows.Forms.Label();
-            Camera = new System.Windows.Forms.TabPage();
-            textBox7 = new System.Windows.Forms.TextBox();
-            textBox6 = new System.Windows.Forms.TextBox();
-            textBox5 = new System.Windows.Forms.TextBox();
-            textBox4 = new System.Windows.Forms.TextBox();
-            label9 = new System.Windows.Forms.Label();
-            label8 = new System.Windows.Forms.Label();
-            pictureBox2 = new System.Windows.Forms.PictureBox();
-            TuningControlBoardTab = new System.Windows.Forms.TabPage();
-            groupBox1 = new System.Windows.Forms.GroupBox();
-            LFDIReturn = new System.Windows.Forms.Label();
-            RefreshCom = new System.Windows.Forms.Button();
-            PortSelector = new System.Windows.Forms.ComboBox();
-            button9 = new System.Windows.Forms.Button();
-            ComStatus = new System.Windows.Forms.Label();
-            HeaterData = new System.Windows.Forms.GroupBox();
-            button5 = new System.Windows.Forms.Button();
-            CompensatorDataGrid = new System.Windows.Forms.DataGridView();
-            HeaterDataGrid = new System.Windows.Forms.DataGridView();
-            TempControlBox = new System.Windows.Forms.GroupBox();
-            button6 = new System.Windows.Forms.Button();
-            TempSetButton = new System.Windows.Forms.Button();
-            PIDSettingBox = new System.Windows.Forms.GroupBox();
-            label10 = new System.Windows.Forms.Label();
-            PIDSetButton = new System.Windows.Forms.Button();
-            label13 = new System.Windows.Forms.Label();
-            PIDSetField = new System.Windows.Forms.TextBox();
-            HeaterRadioBox = new System.Windows.Forms.GroupBox();
-            Heater1Radio = new System.Windows.Forms.RadioButton();
-            Heater3Radio = new System.Windows.Forms.RadioButton();
-            Heater2Radio = new System.Windows.Forms.RadioButton();
-            PIDRadioBox = new System.Windows.Forms.GroupBox();
-            ProportionalRadio = new System.Windows.Forms.RadioButton();
-            DerivativeRadio = new System.Windows.Forms.RadioButton();
-            IntegralRadio = new System.Windows.Forms.RadioButton();
-            label12 = new System.Windows.Forms.Label();
-            TempSetBox = new System.Windows.Forms.TextBox();
-            TuningControlPanel = new System.Windows.Forms.GroupBox();
-            button8 = new System.Windows.Forms.Button();
-            WavelengthSet = new System.Windows.Forms.Button();
-            label11 = new System.Windows.Forms.Label();
-            WavelengthInput = new System.Windows.Forms.TextBox();
-            tabControl1 = new System.Windows.Forms.TabControl();
-            timer1 = new System.Windows.Forms.Timer(components);
-            HeaterLabelColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            KpColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            KiColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            KdColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            AverageTempColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            SetPointColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            HeaterStatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            StageLabelCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            WavelengthCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            VoltageCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            StageSizeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            TuningCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Instrument.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            Focus.SuspendLayout();
-            Camera.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            TuningControlBoardTab.SuspendLayout();
-            groupBox1.SuspendLayout();
-            HeaterData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)CompensatorDataGrid).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)HeaterDataGrid).BeginInit();
-            TempControlBox.SuspendLayout();
-            PIDSettingBox.SuspendLayout();
-            HeaterRadioBox.SuspendLayout();
-            PIDRadioBox.SuspendLayout();
-            TuningControlPanel.SuspendLayout();
-            tabControl1.SuspendLayout();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.Instrument = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Focus = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Camera = new System.Windows.Forms.TabPage();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.TuningControlBoardTab = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.LFDIReturn = new System.Windows.Forms.Label();
+            this.RefreshCom = new System.Windows.Forms.Button();
+            this.PortSelector = new System.Windows.Forms.ComboBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.ComStatus = new System.Windows.Forms.Label();
+            this.HeaterData = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.CompensatorDataGrid = new System.Windows.Forms.DataGridView();
+            this.HeaterDataGrid = new System.Windows.Forms.DataGridView();
+            this.TempControlBox = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.TempSetButton = new System.Windows.Forms.Button();
+            this.PIDSettingBox = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.PIDSetButton = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.PIDSetField = new System.Windows.Forms.TextBox();
+            this.HeaterRadioBox = new System.Windows.Forms.GroupBox();
+            this.PIDRadioBox = new System.Windows.Forms.GroupBox();
+            this.ProportionalRadio = new System.Windows.Forms.RadioButton();
+            this.DerivativeRadio = new System.Windows.Forms.RadioButton();
+            this.IntegralRadio = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.TempSetBox = new System.Windows.Forms.TextBox();
+            this.TuningControlPanel = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.WavelengthSet = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.WavelengthInput = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Heater1checkBox = new System.Windows.Forms.CheckBox();
+            this.Heater2checkBox = new System.Windows.Forms.CheckBox();
+            this.Heater3checkBox = new System.Windows.Forms.CheckBox();
+            this.HeaterLabelColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KpColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KiColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KdColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AverageTempColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SetPointColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeaterStatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StageLabelCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WavelengthCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VoltageCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StageSizeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TuningCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Instrument.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Focus.SuspendLayout();
+            this.Camera.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.TuningControlBoardTab.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.HeaterData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CompensatorDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeaterDataGrid)).BeginInit();
+            this.TempControlBox.SuspendLayout();
+            this.PIDSettingBox.SuspendLayout();
+            this.HeaterRadioBox.SuspendLayout();
+            this.PIDRadioBox.SuspendLayout();
+            this.TuningControlPanel.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // Instrument
             // 
-            Instrument.BackColor = System.Drawing.Color.Linen;
-            Instrument.Controls.Add(label3);
-            Instrument.Controls.Add(textBox2);
-            Instrument.Controls.Add(textBox1);
-            Instrument.Controls.Add(label2);
-            Instrument.Controls.Add(label1);
-            Instrument.Controls.Add(button1);
-            Instrument.Controls.Add(pictureBox1);
-            Instrument.Location = new System.Drawing.Point(4, 24);
-            Instrument.Name = "Instrument";
-            Instrument.Padding = new System.Windows.Forms.Padding(3);
-            Instrument.Size = new System.Drawing.Size(1108, 740);
-            Instrument.TabIndex = 3;
-            Instrument.Text = "Instrument";
+            this.Instrument.BackColor = System.Drawing.Color.Linen;
+            this.Instrument.Controls.Add(this.label3);
+            this.Instrument.Controls.Add(this.textBox2);
+            this.Instrument.Controls.Add(this.textBox1);
+            this.Instrument.Controls.Add(this.label2);
+            this.Instrument.Controls.Add(this.label1);
+            this.Instrument.Controls.Add(this.button1);
+            this.Instrument.Controls.Add(this.pictureBox1);
+            this.Instrument.Location = new System.Drawing.Point(4, 22);
+            this.Instrument.Name = "Instrument";
+            this.Instrument.Padding = new System.Windows.Forms.Padding(3);
+            this.Instrument.Size = new System.Drawing.Size(949, 640);
+            this.Instrument.TabIndex = 3;
+            this.Instrument.Text = "Instrument";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            label3.Location = new System.Drawing.Point(303, 424);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(55, 15);
-            label3.TabIndex = 6;
-            label3.Text = "SavePath";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(260, 367);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "SavePath";
             // 
             // textBox2
             // 
-            textBox2.Location = new System.Drawing.Point(303, 442);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(282, 23);
-            textBox2.TabIndex = 5;
+            this.textBox2.Location = new System.Drawing.Point(260, 383);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(242, 20);
+            this.textBox2.TabIndex = 5;
             // 
             // textBox1
             // 
-            textBox1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            textBox1.Location = new System.Drawing.Point(27, 100);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(135, 43);
-            textBox1.TabIndex = 0;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.textBox1.Location = new System.Drawing.Point(23, 87);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 43);
+            this.textBox1.TabIndex = 0;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(27, 69);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(70, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Wavelength";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Wavelength";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(303, 23);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(83, 15);
-            label1.TabIndex = 3;
-            label1.Text = "Current Image";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(260, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Current Image";
             // 
             // button1
             // 
-            button1.Location = new System.Drawing.Point(303, 472);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(183, 52);
-            button1.TabIndex = 2;
-            button1.Text = "Capture Image";
-            button1.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(260, 409);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 45);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Capture Image";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new System.Drawing.Point(303, 55);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(318, 349);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(260, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 302);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Focus
             // 
-            Focus.BackColor = System.Drawing.Color.LavenderBlush;
-            Focus.Controls.Add(button4);
-            Focus.Controls.Add(textBox3);
-            Focus.Controls.Add(label7);
-            Focus.Controls.Add(label6);
-            Focus.Controls.Add(label5);
-            Focus.Controls.Add(button3);
-            Focus.Controls.Add(button2);
-            Focus.Controls.Add(label4);
-            Focus.Location = new System.Drawing.Point(4, 24);
-            Focus.Name = "Focus";
-            Focus.Padding = new System.Windows.Forms.Padding(3);
-            Focus.Size = new System.Drawing.Size(1108, 740);
-            Focus.TabIndex = 2;
-            Focus.Text = "Focus";
+            this.Focus.BackColor = System.Drawing.Color.LavenderBlush;
+            this.Focus.Controls.Add(this.button4);
+            this.Focus.Controls.Add(this.textBox3);
+            this.Focus.Controls.Add(this.label7);
+            this.Focus.Controls.Add(this.label6);
+            this.Focus.Controls.Add(this.label5);
+            this.Focus.Controls.Add(this.button3);
+            this.Focus.Controls.Add(this.button2);
+            this.Focus.Controls.Add(this.label4);
+            this.Focus.Location = new System.Drawing.Point(4, 22);
+            this.Focus.Name = "Focus";
+            this.Focus.Padding = new System.Windows.Forms.Padding(3);
+            this.Focus.Size = new System.Drawing.Size(949, 640);
+            this.Focus.TabIndex = 2;
+            this.Focus.Text = "Focus";
             // 
             // button4
             // 
-            button4.Location = new System.Drawing.Point(146, 258);
-            button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(75, 23);
-            button4.TabIndex = 7;
-            button4.Text = "Goto";
-            button4.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(125, 224);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(64, 20);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Goto";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
-            textBox3.Location = new System.Drawing.Point(26, 258);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new System.Drawing.Size(100, 23);
-            textBox3.TabIndex = 6;
+            this.textBox3.Location = new System.Drawing.Point(22, 224);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(86, 20);
+            this.textBox3.TabIndex = 6;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label7.Location = new System.Drawing.Point(26, 211);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(179, 37);
-            label7.TabIndex = 5;
-            label7.Text = "Goto Position";
-            label7.Click += label7_Click;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.label7.Location = new System.Drawing.Point(22, 183);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(179, 37);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Goto Position";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label6.Location = new System.Drawing.Point(26, 120);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(207, 37);
-            label6.TabIndex = 4;
-            label6.Text = "Current Position";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.label6.Location = new System.Drawing.Point(22, 104);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(207, 37);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Current Position";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label5.Location = new System.Drawing.Point(381, 106);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(59, 37);
-            label5.TabIndex = 3;
-            label5.Text = "Jog";
-            label5.Click += label5_Click;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.label5.Location = new System.Drawing.Point(327, 92);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 37);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Jog";
             // 
             // button3
             // 
-            button3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            button3.Location = new System.Drawing.Point(381, 258);
-            button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(180, 114);
-            button3.TabIndex = 2;
-            button3.Text = "backwards";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.button3.Location = new System.Drawing.Point(327, 224);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(154, 99);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "backwards";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            button2.Location = new System.Drawing.Point(381, 146);
-            button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(180, 93);
-            button2.TabIndex = 1;
-            button2.Text = "forwards";
-            button2.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.button2.Location = new System.Drawing.Point(327, 127);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(154, 81);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "forwards";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label4.Location = new System.Drawing.Point(26, 72);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(207, 37);
-            label4.TabIndex = 0;
-            label4.Text = "Current Position";
-            label4.Click += label4_Click;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F);
+            this.label4.Location = new System.Drawing.Point(22, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(207, 37);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Current Position";
             // 
             // Camera
             // 
-            Camera.BackColor = System.Drawing.Color.SkyBlue;
-            Camera.Controls.Add(textBox7);
-            Camera.Controls.Add(textBox6);
-            Camera.Controls.Add(textBox5);
-            Camera.Controls.Add(textBox4);
-            Camera.Controls.Add(label9);
-            Camera.Controls.Add(label8);
-            Camera.Controls.Add(pictureBox2);
-            Camera.Location = new System.Drawing.Point(4, 24);
-            Camera.Name = "Camera";
-            Camera.Padding = new System.Windows.Forms.Padding(3);
-            Camera.Size = new System.Drawing.Size(1108, 740);
-            Camera.TabIndex = 1;
-            Camera.Text = "Camera";
+            this.Camera.BackColor = System.Drawing.Color.SkyBlue;
+            this.Camera.Controls.Add(this.textBox7);
+            this.Camera.Controls.Add(this.textBox6);
+            this.Camera.Controls.Add(this.textBox5);
+            this.Camera.Controls.Add(this.textBox4);
+            this.Camera.Controls.Add(this.label9);
+            this.Camera.Controls.Add(this.label8);
+            this.Camera.Controls.Add(this.pictureBox2);
+            this.Camera.Location = new System.Drawing.Point(4, 22);
+            this.Camera.Name = "Camera";
+            this.Camera.Padding = new System.Windows.Forms.Padding(3);
+            this.Camera.Size = new System.Drawing.Size(949, 640);
+            this.Camera.TabIndex = 1;
+            this.Camera.Text = "Camera";
             // 
             // textBox7
             // 
-            textBox7.Location = new System.Drawing.Point(3, 434);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new System.Drawing.Size(100, 23);
-            textBox7.TabIndex = 8;
+            this.textBox7.Location = new System.Drawing.Point(3, 376);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(86, 20);
+            this.textBox7.TabIndex = 8;
             // 
             // textBox6
             // 
-            textBox6.Location = new System.Drawing.Point(8, 310);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new System.Drawing.Size(100, 23);
-            textBox6.TabIndex = 7;
+            this.textBox6.Location = new System.Drawing.Point(7, 269);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(86, 20);
+            this.textBox6.TabIndex = 7;
             // 
             // textBox5
             // 
-            textBox5.Location = new System.Drawing.Point(8, 180);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new System.Drawing.Size(100, 23);
-            textBox5.TabIndex = 6;
+            this.textBox5.Location = new System.Drawing.Point(7, 156);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(86, 20);
+            this.textBox5.TabIndex = 6;
             // 
             // textBox4
             // 
-            textBox4.Location = new System.Drawing.Point(8, 46);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new System.Drawing.Size(100, 23);
-            textBox4.TabIndex = 5;
+            this.textBox4.Location = new System.Drawing.Point(7, 40);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(86, 20);
+            this.textBox4.TabIndex = 5;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new System.Drawing.Point(281, 43);
-            label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(83, 15);
-            label9.TabIndex = 4;
-            label9.Text = "Current Image";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(241, 37);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(73, 13);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Current Image";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(8, 28);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(48, 15);
-            label8.TabIndex = 3;
-            label8.Text = "Binning";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Binning";
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new System.Drawing.Point(281, 61);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new System.Drawing.Size(318, 349);
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Location = new System.Drawing.Point(241, 53);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(273, 302);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // TuningControlBoardTab
             // 
-            TuningControlBoardTab.BackColor = System.Drawing.Color.PaleTurquoise;
-            TuningControlBoardTab.Controls.Add(groupBox1);
-            TuningControlBoardTab.Controls.Add(HeaterData);
-            TuningControlBoardTab.Controls.Add(TempControlBox);
-            TuningControlBoardTab.Controls.Add(TuningControlPanel);
-            TuningControlBoardTab.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            TuningControlBoardTab.Location = new System.Drawing.Point(4, 24);
-            TuningControlBoardTab.Name = "TuningControlBoardTab";
-            TuningControlBoardTab.Padding = new System.Windows.Forms.Padding(3);
-            TuningControlBoardTab.Size = new System.Drawing.Size(1108, 740);
-            TuningControlBoardTab.TabIndex = 0;
-            TuningControlBoardTab.Text = "Tuning Control Board";
+            this.TuningControlBoardTab.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.TuningControlBoardTab.Controls.Add(this.groupBox1);
+            this.TuningControlBoardTab.Controls.Add(this.HeaterData);
+            this.TuningControlBoardTab.Controls.Add(this.TempControlBox);
+            this.TuningControlBoardTab.Controls.Add(this.TuningControlPanel);
+            this.TuningControlBoardTab.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.TuningControlBoardTab.Location = new System.Drawing.Point(4, 22);
+            this.TuningControlBoardTab.Name = "TuningControlBoardTab";
+            this.TuningControlBoardTab.Padding = new System.Windows.Forms.Padding(3);
+            this.TuningControlBoardTab.Size = new System.Drawing.Size(949, 640);
+            this.TuningControlBoardTab.TabIndex = 0;
+            this.TuningControlBoardTab.Text = "Tuning Control Board";
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = System.Drawing.Color.Azure;
-            groupBox1.Controls.Add(LFDIReturn);
-            groupBox1.Controls.Add(RefreshCom);
-            groupBox1.Controls.Add(PortSelector);
-            groupBox1.Controls.Add(button9);
-            groupBox1.Controls.Add(ComStatus);
-            groupBox1.Location = new System.Drawing.Point(552, 6);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(287, 222);
-            groupBox1.TabIndex = 12;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "COM ports";
+            this.groupBox1.BackColor = System.Drawing.Color.Azure;
+            this.groupBox1.Controls.Add(this.LFDIReturn);
+            this.groupBox1.Controls.Add(this.RefreshCom);
+            this.groupBox1.Controls.Add(this.PortSelector);
+            this.groupBox1.Controls.Add(this.button9);
+            this.groupBox1.Controls.Add(this.ComStatus);
+            this.groupBox1.Location = new System.Drawing.Point(473, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(246, 192);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "COM ports";
             // 
             // LFDIReturn
             // 
-            LFDIReturn.AutoSize = true;
-            LFDIReturn.Location = new System.Drawing.Point(6, 181);
-            LFDIReturn.Name = "LFDIReturn";
-            LFDIReturn.Size = new System.Drawing.Size(45, 13);
-            LFDIReturn.TabIndex = 13;
-            LFDIReturn.Text = "Return:";
-            LFDIReturn.Click += LFDIReturn_Click;
+            this.LFDIReturn.AutoSize = true;
+            this.LFDIReturn.Location = new System.Drawing.Point(5, 157);
+            this.LFDIReturn.Name = "LFDIReturn";
+            this.LFDIReturn.Size = new System.Drawing.Size(45, 13);
+            this.LFDIReturn.TabIndex = 13;
+            this.LFDIReturn.Text = "Return:";
             // 
             // RefreshCom
             // 
-            RefreshCom.Location = new System.Drawing.Point(189, 110);
-            RefreshCom.Name = "RefreshCom";
-            RefreshCom.Size = new System.Drawing.Size(92, 44);
-            RefreshCom.TabIndex = 12;
-            RefreshCom.Text = "Refresh";
-            RefreshCom.UseVisualStyleBackColor = true;
-            RefreshCom.Click += RefreshCom_Click;
+            this.RefreshCom.Location = new System.Drawing.Point(162, 95);
+            this.RefreshCom.Name = "RefreshCom";
+            this.RefreshCom.Size = new System.Drawing.Size(79, 38);
+            this.RefreshCom.TabIndex = 12;
+            this.RefreshCom.Text = "Refresh";
+            this.RefreshCom.UseVisualStyleBackColor = true;
             // 
             // PortSelector
             // 
-            PortSelector.FormattingEnabled = true;
-            PortSelector.Location = new System.Drawing.Point(6, 25);
-            PortSelector.Name = "PortSelector";
-            PortSelector.Size = new System.Drawing.Size(275, 21);
-            PortSelector.TabIndex = 8;
-            PortSelector.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            this.PortSelector.FormattingEnabled = true;
+            this.PortSelector.Location = new System.Drawing.Point(5, 22);
+            this.PortSelector.Name = "PortSelector";
+            this.PortSelector.Size = new System.Drawing.Size(236, 21);
+            this.PortSelector.TabIndex = 8;
             // 
             // button9
             // 
-            button9.Location = new System.Drawing.Point(189, 56);
-            button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(92, 44);
-            button9.TabIndex = 10;
-            button9.Text = "Connect";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button9_Click;
+            this.button9.Location = new System.Drawing.Point(162, 49);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(79, 38);
+            this.button9.TabIndex = 10;
+            this.button9.Text = "Connect";
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // ComStatus
             // 
-            ComStatus.AutoSize = true;
-            ComStatus.Location = new System.Drawing.Point(6, 72);
-            ComStatus.Name = "ComStatus";
-            ComStatus.Size = new System.Drawing.Size(123, 13);
-            ComStatus.TabIndex = 11;
-            ComStatus.Text = "Status: Not Connected";
+            this.ComStatus.AutoSize = true;
+            this.ComStatus.Location = new System.Drawing.Point(5, 62);
+            this.ComStatus.Name = "ComStatus";
+            this.ComStatus.Size = new System.Drawing.Size(123, 13);
+            this.ComStatus.TabIndex = 11;
+            this.ComStatus.Text = "Status: Not Connected";
             // 
             // HeaterData
             // 
-            HeaterData.BackColor = System.Drawing.Color.Azure;
-            HeaterData.Controls.Add(button5);
-            HeaterData.Controls.Add(CompensatorDataGrid);
-            HeaterData.Controls.Add(HeaterDataGrid);
-            HeaterData.Location = new System.Drawing.Point(8, 390);
-            HeaterData.Name = "HeaterData";
-            HeaterData.Size = new System.Drawing.Size(842, 341);
-            HeaterData.TabIndex = 7;
-            HeaterData.TabStop = false;
-            HeaterData.Text = "House Keeping";
+            this.HeaterData.BackColor = System.Drawing.Color.Azure;
+            this.HeaterData.Controls.Add(this.button5);
+            this.HeaterData.Controls.Add(this.CompensatorDataGrid);
+            this.HeaterData.Controls.Add(this.HeaterDataGrid);
+            this.HeaterData.Location = new System.Drawing.Point(7, 338);
+            this.HeaterData.Name = "HeaterData";
+            this.HeaterData.Size = new System.Drawing.Size(722, 296);
+            this.HeaterData.TabIndex = 7;
+            this.HeaterData.TabStop = false;
+            this.HeaterData.Text = "House Keeping";
             // 
             // button5
             // 
-            button5.Location = new System.Drawing.Point(756, 21);
-            button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(75, 23);
-            button5.TabIndex = 2;
-            button5.Text = "Refresh";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click_1;
+            this.button5.Location = new System.Drawing.Point(648, 18);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(64, 20);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Refresh";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // CompensatorDataGrid
             // 
-            CompensatorDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            CompensatorDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { StageLabelCol, WavelengthCol, VoltageCol, StageSizeCol, TuningCol });
-            CompensatorDataGrid.Location = new System.Drawing.Point(6, 159);
-            CompensatorDataGrid.Name = "CompensatorDataGrid";
-            CompensatorDataGrid.RowTemplate.Height = 25;
-            CompensatorDataGrid.Size = new System.Drawing.Size(547, 150);
-            CompensatorDataGrid.TabIndex = 1;
+            this.CompensatorDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CompensatorDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.StageLabelCol,
+            this.WavelengthCol,
+            this.VoltageCol,
+            this.StageSizeCol,
+            this.TuningCol});
+            this.CompensatorDataGrid.Location = new System.Drawing.Point(5, 138);
+            this.CompensatorDataGrid.Name = "CompensatorDataGrid";
+            this.CompensatorDataGrid.RowTemplate.Height = 25;
+            this.CompensatorDataGrid.Size = new System.Drawing.Size(547, 130);
+            this.CompensatorDataGrid.TabIndex = 1;
             // 
             // HeaterDataGrid
             // 
-            HeaterDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            HeaterDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { HeaterLabelColumn, KpColumn, KiColumn, KdColumn, AverageTempColumn, SetPointColumn, HeaterStatusColumn });
-            HeaterDataGrid.Location = new System.Drawing.Point(6, 21);
-            HeaterDataGrid.Name = "HeaterDataGrid";
-            HeaterDataGrid.RowTemplate.Height = 25;
-            HeaterDataGrid.Size = new System.Drawing.Size(744, 132);
-            HeaterDataGrid.TabIndex = 0;
+            this.HeaterDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.HeaterDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.HeaterLabelColumn,
+            this.KpColumn,
+            this.KiColumn,
+            this.KdColumn,
+            this.AverageTempColumn,
+            this.SetPointColumn,
+            this.HeaterStatusColumn});
+            this.HeaterDataGrid.Location = new System.Drawing.Point(5, 18);
+            this.HeaterDataGrid.Name = "HeaterDataGrid";
+            this.HeaterDataGrid.RowTemplate.Height = 25;
+            this.HeaterDataGrid.Size = new System.Drawing.Size(638, 114);
+            this.HeaterDataGrid.TabIndex = 0;
             // 
             // TempControlBox
             // 
-            TempControlBox.BackColor = System.Drawing.Color.Azure;
-            TempControlBox.Controls.Add(button6);
-            TempControlBox.Controls.Add(TempSetButton);
-            TempControlBox.Controls.Add(PIDSettingBox);
-            TempControlBox.Controls.Add(label12);
-            TempControlBox.Controls.Add(TempSetBox);
-            TempControlBox.Location = new System.Drawing.Point(269, 6);
-            TempControlBox.Name = "TempControlBox";
-            TempControlBox.Size = new System.Drawing.Size(277, 378);
-            TempControlBox.TabIndex = 6;
-            TempControlBox.TabStop = false;
-            TempControlBox.Text = "Temperature Control";
-            TempControlBox.Enter += TempControlBox_Enter;
+            this.TempControlBox.BackColor = System.Drawing.Color.Azure;
+            this.TempControlBox.Controls.Add(this.button6);
+            this.TempControlBox.Controls.Add(this.TempSetButton);
+            this.TempControlBox.Controls.Add(this.PIDSettingBox);
+            this.TempControlBox.Controls.Add(this.label12);
+            this.TempControlBox.Controls.Add(this.TempSetBox);
+            this.TempControlBox.Location = new System.Drawing.Point(231, 5);
+            this.TempControlBox.Name = "TempControlBox";
+            this.TempControlBox.Size = new System.Drawing.Size(237, 328);
+            this.TempControlBox.TabIndex = 6;
+            this.TempControlBox.TabStop = false;
+            this.TempControlBox.Text = "Temperature Control";
             // 
             // button6
             // 
-            button6.Location = new System.Drawing.Point(12, 78);
-            button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(98, 29);
-            button6.TabIndex = 13;
-            button6.Text = "Heater On";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            this.button6.Location = new System.Drawing.Point(10, 68);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(84, 25);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "Heater On";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // TempSetButton
             // 
-            TempSetButton.Location = new System.Drawing.Point(116, 44);
-            TempSetButton.Name = "TempSetButton";
-            TempSetButton.Size = new System.Drawing.Size(98, 29);
-            TempSetButton.TabIndex = 11;
-            TempSetButton.Text = "Set";
-            TempSetButton.UseVisualStyleBackColor = true;
-            TempSetButton.Click += TempSetButton_Click;
+            this.TempSetButton.Location = new System.Drawing.Point(99, 38);
+            this.TempSetButton.Name = "TempSetButton";
+            this.TempSetButton.Size = new System.Drawing.Size(84, 25);
+            this.TempSetButton.TabIndex = 11;
+            this.TempSetButton.Text = "Set";
+            this.TempSetButton.UseVisualStyleBackColor = true;
             // 
             // PIDSettingBox
             // 
-            PIDSettingBox.Controls.Add(label10);
-            PIDSettingBox.Controls.Add(PIDSetButton);
-            PIDSettingBox.Controls.Add(label13);
-            PIDSettingBox.Controls.Add(PIDSetField);
-            PIDSettingBox.Controls.Add(HeaterRadioBox);
-            PIDSettingBox.Controls.Add(PIDRadioBox);
-            PIDSettingBox.Location = new System.Drawing.Point(6, 141);
-            PIDSettingBox.Name = "PIDSettingBox";
-            PIDSettingBox.Size = new System.Drawing.Size(262, 231);
-            PIDSettingBox.TabIndex = 4;
-            PIDSettingBox.TabStop = false;
-            PIDSettingBox.Text = "PID Settings";
+            this.PIDSettingBox.Controls.Add(this.label10);
+            this.PIDSettingBox.Controls.Add(this.PIDSetButton);
+            this.PIDSettingBox.Controls.Add(this.label13);
+            this.PIDSettingBox.Controls.Add(this.PIDSetField);
+            this.PIDSettingBox.Controls.Add(this.HeaterRadioBox);
+            this.PIDSettingBox.Controls.Add(this.PIDRadioBox);
+            this.PIDSettingBox.Location = new System.Drawing.Point(5, 122);
+            this.PIDSettingBox.Name = "PIDSettingBox";
+            this.PIDSettingBox.Size = new System.Drawing.Size(225, 200);
+            this.PIDSettingBox.TabIndex = 4;
+            this.PIDSettingBox.TabStop = false;
+            this.PIDSettingBox.Text = "PID Settings";
             // 
             // label10
             // 
-            label10.AllowDrop = true;
-            label10.AutoSize = true;
-            label10.Location = new System.Drawing.Point(10, 216);
-            label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(0, 13);
-            label10.TabIndex = 11;
+            this.label10.AllowDrop = true;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(9, 187);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.TabIndex = 11;
             // 
             // PIDSetButton
             // 
-            PIDSetButton.Location = new System.Drawing.Point(116, 184);
-            PIDSetButton.Name = "PIDSetButton";
-            PIDSetButton.Size = new System.Drawing.Size(98, 29);
-            PIDSetButton.TabIndex = 10;
-            PIDSetButton.Text = "Set";
-            PIDSetButton.UseVisualStyleBackColor = true;
-            PIDSetButton.Click += PIDSetButton_Click;
+            this.PIDSetButton.Location = new System.Drawing.Point(99, 159);
+            this.PIDSetButton.Name = "PIDSetButton";
+            this.PIDSetButton.Size = new System.Drawing.Size(84, 25);
+            this.PIDSetButton.TabIndex = 10;
+            this.PIDSetButton.Text = "Set";
+            this.PIDSetButton.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Location = new System.Drawing.Point(6, 160);
-            label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(35, 13);
-            label13.TabIndex = 9;
-            label13.Text = "Value";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(0, 143);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(35, 13);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "Value";
             // 
             // PIDSetField
             // 
-            PIDSetField.Location = new System.Drawing.Point(0, 184);
-            PIDSetField.Name = "PIDSetField";
-            PIDSetField.Size = new System.Drawing.Size(100, 22);
-            PIDSetField.TabIndex = 8;
-            PIDSetField.TextChanged += PIDSetField_TextChanged;
+            this.PIDSetField.Location = new System.Drawing.Point(4, 159);
+            this.PIDSetField.Name = "PIDSetField";
+            this.PIDSetField.Size = new System.Drawing.Size(86, 22);
+            this.PIDSetField.TabIndex = 8;
             // 
             // HeaterRadioBox
             // 
-            HeaterRadioBox.Controls.Add(Heater1Radio);
-            HeaterRadioBox.Controls.Add(Heater3Radio);
-            HeaterRadioBox.Controls.Add(Heater2Radio);
-            HeaterRadioBox.Location = new System.Drawing.Point(144, 28);
-            HeaterRadioBox.Name = "HeaterRadioBox";
-            HeaterRadioBox.Size = new System.Drawing.Size(107, 129);
-            HeaterRadioBox.TabIndex = 7;
-            HeaterRadioBox.TabStop = false;
-            HeaterRadioBox.Text = "HeaterBox";
-            // 
-            // Heater1Radio
-            // 
-            Heater1Radio.AutoSize = true;
-            Heater1Radio.Location = new System.Drawing.Point(6, 28);
-            Heater1Radio.Name = "Heater1Radio";
-            Heater1Radio.Size = new System.Drawing.Size(65, 17);
-            Heater1Radio.TabIndex = 6;
-            Heater1Radio.TabStop = true;
-            Heater1Radio.Text = "Heater1";
-            Heater1Radio.UseVisualStyleBackColor = true;
-            Heater1Radio.CheckedChanged += Heater1Radio_CheckedChanged;
-            // 
-            // Heater3Radio
-            // 
-            Heater3Radio.AutoSize = true;
-            Heater3Radio.Location = new System.Drawing.Point(6, 90);
-            Heater3Radio.Name = "Heater3Radio";
-            Heater3Radio.Size = new System.Drawing.Size(65, 17);
-            Heater3Radio.TabIndex = 8;
-            Heater3Radio.TabStop = true;
-            Heater3Radio.Text = "Heater3";
-            Heater3Radio.UseVisualStyleBackColor = true;
-            Heater3Radio.CheckedChanged += Heater3Radio_CheckedChanged;
-            // 
-            // Heater2Radio
-            // 
-            Heater2Radio.AutoSize = true;
-            Heater2Radio.Location = new System.Drawing.Point(6, 59);
-            Heater2Radio.Name = "Heater2Radio";
-            Heater2Radio.Size = new System.Drawing.Size(65, 17);
-            Heater2Radio.TabIndex = 7;
-            Heater2Radio.TabStop = true;
-            Heater2Radio.Text = "Heater2";
-            Heater2Radio.UseVisualStyleBackColor = true;
+            this.HeaterRadioBox.Controls.Add(this.Heater3checkBox);
+            this.HeaterRadioBox.Controls.Add(this.Heater2checkBox);
+            this.HeaterRadioBox.Controls.Add(this.Heater1checkBox);
+            this.HeaterRadioBox.Location = new System.Drawing.Point(123, 24);
+            this.HeaterRadioBox.Name = "HeaterRadioBox";
+            this.HeaterRadioBox.Size = new System.Drawing.Size(92, 112);
+            this.HeaterRadioBox.TabIndex = 7;
+            this.HeaterRadioBox.TabStop = false;
+            this.HeaterRadioBox.Text = "Heater Zones";
             // 
             // PIDRadioBox
             // 
-            PIDRadioBox.Controls.Add(ProportionalRadio);
-            PIDRadioBox.Controls.Add(DerivativeRadio);
-            PIDRadioBox.Controls.Add(IntegralRadio);
-            PIDRadioBox.Location = new System.Drawing.Point(6, 28);
-            PIDRadioBox.Name = "PIDRadioBox";
-            PIDRadioBox.Size = new System.Drawing.Size(132, 129);
-            PIDRadioBox.TabIndex = 6;
-            PIDRadioBox.TabStop = false;
-            PIDRadioBox.Text = "PIDBox";
+            this.PIDRadioBox.Controls.Add(this.ProportionalRadio);
+            this.PIDRadioBox.Controls.Add(this.DerivativeRadio);
+            this.PIDRadioBox.Controls.Add(this.IntegralRadio);
+            this.PIDRadioBox.Location = new System.Drawing.Point(5, 24);
+            this.PIDRadioBox.Name = "PIDRadioBox";
+            this.PIDRadioBox.Size = new System.Drawing.Size(113, 112);
+            this.PIDRadioBox.TabIndex = 6;
+            this.PIDRadioBox.TabStop = false;
+            this.PIDRadioBox.Text = "Terms";
             // 
             // ProportionalRadio
             // 
-            ProportionalRadio.AutoSize = true;
-            ProportionalRadio.Location = new System.Drawing.Point(6, 28);
-            ProportionalRadio.Name = "ProportionalRadio";
-            ProportionalRadio.Size = new System.Drawing.Size(90, 17);
-            ProportionalRadio.TabIndex = 3;
-            ProportionalRadio.TabStop = true;
-            ProportionalRadio.Text = "Proportional";
-            ProportionalRadio.UseVisualStyleBackColor = true;
-            ProportionalRadio.CheckedChanged += ProportionalRadio_CheckedChanged;
+            this.ProportionalRadio.AutoSize = true;
+            this.ProportionalRadio.Location = new System.Drawing.Point(5, 24);
+            this.ProportionalRadio.Name = "ProportionalRadio";
+            this.ProportionalRadio.Size = new System.Drawing.Size(90, 17);
+            this.ProportionalRadio.TabIndex = 3;
+            this.ProportionalRadio.TabStop = true;
+            this.ProportionalRadio.Text = "Proportional";
+            this.ProportionalRadio.UseVisualStyleBackColor = true;
             // 
             // DerivativeRadio
             // 
-            DerivativeRadio.AutoSize = true;
-            DerivativeRadio.Location = new System.Drawing.Point(6, 90);
-            DerivativeRadio.Name = "DerivativeRadio";
-            DerivativeRadio.Size = new System.Drawing.Size(75, 17);
-            DerivativeRadio.TabIndex = 5;
-            DerivativeRadio.TabStop = true;
-            DerivativeRadio.Text = "Derivative";
-            DerivativeRadio.UseVisualStyleBackColor = true;
-            DerivativeRadio.CheckedChanged += DerivativeRadio_CheckedChanged;
+            this.DerivativeRadio.AutoSize = true;
+            this.DerivativeRadio.Location = new System.Drawing.Point(5, 78);
+            this.DerivativeRadio.Name = "DerivativeRadio";
+            this.DerivativeRadio.Size = new System.Drawing.Size(75, 17);
+            this.DerivativeRadio.TabIndex = 5;
+            this.DerivativeRadio.TabStop = true;
+            this.DerivativeRadio.Text = "Derivative";
+            this.DerivativeRadio.UseVisualStyleBackColor = true;
             // 
             // IntegralRadio
             // 
-            IntegralRadio.AutoSize = true;
-            IntegralRadio.Location = new System.Drawing.Point(6, 59);
-            IntegralRadio.Name = "IntegralRadio";
-            IntegralRadio.Size = new System.Drawing.Size(65, 17);
-            IntegralRadio.TabIndex = 4;
-            IntegralRadio.TabStop = true;
-            IntegralRadio.Text = "Integral";
-            IntegralRadio.UseVisualStyleBackColor = true;
-            IntegralRadio.CheckedChanged += IntegralRadio_CheckedChanged;
+            this.IntegralRadio.AutoSize = true;
+            this.IntegralRadio.Location = new System.Drawing.Point(5, 51);
+            this.IntegralRadio.Name = "IntegralRadio";
+            this.IntegralRadio.Size = new System.Drawing.Size(65, 17);
+            this.IntegralRadio.TabIndex = 4;
+            this.IntegralRadio.TabStop = true;
+            this.IntegralRadio.Text = "Integral";
+            this.IntegralRadio.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Location = new System.Drawing.Point(6, 25);
-            label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(134, 13);
-            label12.TabIndex = 1;
-            label12.Text = "Temperature Setpoint (C)";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(5, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(134, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Temperature Setpoint (C)";
             // 
             // TempSetBox
             // 
-            TempSetBox.Location = new System.Drawing.Point(10, 49);
-            TempSetBox.Name = "TempSetBox";
-            TempSetBox.Size = new System.Drawing.Size(100, 22);
-            TempSetBox.TabIndex = 0;
+            this.TempSetBox.Location = new System.Drawing.Point(9, 42);
+            this.TempSetBox.Name = "TempSetBox";
+            this.TempSetBox.Size = new System.Drawing.Size(86, 22);
+            this.TempSetBox.TabIndex = 0;
             // 
             // TuningControlPanel
             // 
-            TuningControlPanel.BackColor = System.Drawing.Color.Azure;
-            TuningControlPanel.Controls.Add(button8);
-            TuningControlPanel.Controls.Add(WavelengthSet);
-            TuningControlPanel.Controls.Add(label11);
-            TuningControlPanel.Controls.Add(WavelengthInput);
-            TuningControlPanel.Location = new System.Drawing.Point(8, 6);
-            TuningControlPanel.Name = "TuningControlPanel";
-            TuningControlPanel.Size = new System.Drawing.Size(255, 128);
-            TuningControlPanel.TabIndex = 5;
-            TuningControlPanel.TabStop = false;
-            TuningControlPanel.Text = "Tuning";
+            this.TuningControlPanel.BackColor = System.Drawing.Color.Azure;
+            this.TuningControlPanel.Controls.Add(this.button8);
+            this.TuningControlPanel.Controls.Add(this.WavelengthSet);
+            this.TuningControlPanel.Controls.Add(this.label11);
+            this.TuningControlPanel.Controls.Add(this.WavelengthInput);
+            this.TuningControlPanel.Location = new System.Drawing.Point(7, 5);
+            this.TuningControlPanel.Name = "TuningControlPanel";
+            this.TuningControlPanel.Size = new System.Drawing.Size(219, 111);
+            this.TuningControlPanel.TabIndex = 5;
+            this.TuningControlPanel.TabStop = false;
+            this.TuningControlPanel.Text = "Wavelength Tuning";
             // 
             // button8
             // 
-            button8.Location = new System.Drawing.Point(6, 78);
-            button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(147, 29);
-            button8.TabIndex = 8;
-            button8.Text = "Tuning On";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
+            this.button8.Location = new System.Drawing.Point(5, 68);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(126, 25);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Tuning On";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // WavelengthSet
             // 
-            WavelengthSet.Location = new System.Drawing.Point(143, 44);
-            WavelengthSet.Name = "WavelengthSet";
-            WavelengthSet.Size = new System.Drawing.Size(87, 29);
-            WavelengthSet.TabIndex = 7;
-            WavelengthSet.Text = "Set";
-            WavelengthSet.UseVisualStyleBackColor = true;
-            WavelengthSet.Click += WavelengthSet_Click;
+            this.WavelengthSet.Location = new System.Drawing.Point(123, 38);
+            this.WavelengthSet.Name = "WavelengthSet";
+            this.WavelengthSet.Size = new System.Drawing.Size(75, 25);
+            this.WavelengthSet.TabIndex = 7;
+            this.WavelengthSet.Text = "Set";
+            this.WavelengthSet.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Location = new System.Drawing.Point(6, 25);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(94, 13);
-            label11.TabIndex = 6;
-            label11.Text = "Wavelength (nm)";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(5, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 13);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Wavelength (nm)";
             // 
             // WavelengthInput
             // 
-            WavelengthInput.Location = new System.Drawing.Point(6, 49);
-            WavelengthInput.Name = "WavelengthInput";
-            WavelengthInput.Size = new System.Drawing.Size(131, 22);
-            WavelengthInput.TabIndex = 5;
+            this.WavelengthInput.Location = new System.Drawing.Point(5, 42);
+            this.WavelengthInput.Name = "WavelengthInput";
+            this.WavelengthInput.Size = new System.Drawing.Size(113, 22);
+            this.WavelengthInput.TabIndex = 5;
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(TuningControlBoardTab);
-            tabControl1.Controls.Add(Camera);
-            tabControl1.Controls.Add(Focus);
-            tabControl1.Controls.Add(Instrument);
-            tabControl1.Location = new System.Drawing.Point(0, 0);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new System.Drawing.Size(1116, 768);
-            tabControl1.TabIndex = 0;
+            this.tabControl1.Controls.Add(this.TuningControlBoardTab);
+            this.tabControl1.Controls.Add(this.Camera);
+            this.tabControl1.Controls.Add(this.Focus);
+            this.tabControl1.Controls.Add(this.Instrument);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(957, 666);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // Heater1checkBox
+            // 
+            this.Heater1checkBox.AutoSize = true;
+            this.Heater1checkBox.Location = new System.Drawing.Point(6, 24);
+            this.Heater1checkBox.Name = "Heater1checkBox";
+            this.Heater1checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater1checkBox.TabIndex = 0;
+            this.Heater1checkBox.Text = "H1";
+            this.Heater1checkBox.UseVisualStyleBackColor = true;
+            this.Heater1checkBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // Heater2checkBox
+            // 
+            this.Heater2checkBox.AutoSize = true;
+            this.Heater2checkBox.Location = new System.Drawing.Point(6, 51);
+            this.Heater2checkBox.Name = "Heater2checkBox";
+            this.Heater2checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater2checkBox.TabIndex = 1;
+            this.Heater2checkBox.Text = "H2";
+            this.Heater2checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Heater3checkBox
+            // 
+            this.Heater3checkBox.AutoSize = true;
+            this.Heater3checkBox.Location = new System.Drawing.Point(6, 78);
+            this.Heater3checkBox.Name = "Heater3checkBox";
+            this.Heater3checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater3checkBox.TabIndex = 2;
+            this.Heater3checkBox.Text = "H3";
+            this.Heater3checkBox.UseVisualStyleBackColor = true;
             // 
             // HeaterLabelColumn
             // 
-            HeaterLabelColumn.HeaderText = "Heater Label";
-            HeaterLabelColumn.Name = "HeaterLabelColumn";
+            this.HeaterLabelColumn.HeaderText = "Heater Zone";
+            this.HeaterLabelColumn.Name = "HeaterLabelColumn";
             // 
             // KpColumn
             // 
-            KpColumn.HeaderText = "Kp";
-            KpColumn.Name = "KpColumn";
+            this.KpColumn.HeaderText = "Kp";
+            this.KpColumn.Name = "KpColumn";
             // 
             // KiColumn
             // 
-            KiColumn.HeaderText = "Ki";
-            KiColumn.Name = "KiColumn";
+            this.KiColumn.HeaderText = "Ki";
+            this.KiColumn.Name = "KiColumn";
             // 
             // KdColumn
             // 
-            KdColumn.HeaderText = "Kd";
-            KdColumn.Name = "KdColumn";
+            this.KdColumn.HeaderText = "Kd";
+            this.KdColumn.Name = "KdColumn";
             // 
             // AverageTempColumn
             // 
-            AverageTempColumn.HeaderText = "AverageTemp";
-            AverageTempColumn.Name = "AverageTempColumn";
+            this.AverageTempColumn.HeaderText = "AverageTemp Over 2 Sec (C)";
+            this.AverageTempColumn.Name = "AverageTempColumn";
             // 
             // SetPointColumn
             // 
-            SetPointColumn.HeaderText = "Set Point";
-            SetPointColumn.Name = "SetPointColumn";
+            this.SetPointColumn.HeaderText = "Set Point (C)";
+            this.SetPointColumn.Name = "SetPointColumn";
             // 
             // HeaterStatusColumn
             // 
-            HeaterStatusColumn.HeaderText = "HeaterStatus";
-            HeaterStatusColumn.Name = "HeaterStatusColumn";
+            this.HeaterStatusColumn.HeaderText = "HeaterStatus";
+            this.HeaterStatusColumn.Name = "HeaterStatusColumn";
             // 
             // StageLabelCol
             // 
-            StageLabelCol.HeaderText = "Stage Label";
-            StageLabelCol.Name = "StageLabelCol";
+            this.StageLabelCol.HeaderText = "Stage Label";
+            this.StageLabelCol.Name = "StageLabelCol";
             // 
             // WavelengthCol
             // 
-            WavelengthCol.HeaderText = "Wavelength";
-            WavelengthCol.Name = "WavelengthCol";
+            this.WavelengthCol.HeaderText = "Wavelength (nm)";
+            this.WavelengthCol.Name = "WavelengthCol";
             // 
             // VoltageCol
             // 
-            VoltageCol.HeaderText = "Voltage";
-            VoltageCol.Name = "VoltageCol";
+            this.VoltageCol.HeaderText = "Voltage (V)";
+            this.VoltageCol.Name = "VoltageCol";
             // 
             // StageSizeCol
             // 
-            StageSizeCol.HeaderText = "Stage Size";
-            StageSizeCol.Name = "StageSizeCol";
+            this.StageSizeCol.HeaderText = "Stage Size (mm)";
+            this.StageSizeCol.Name = "StageSizeCol";
             // 
             // TuningCol
             // 
-            TuningCol.HeaderText = "Tuning";
-            TuningCol.Name = "TuningCol";
+            this.TuningCol.HeaderText = "Tuning";
+            this.TuningCol.Name = "TuningCol";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(860, 767);
-            Controls.Add(tabControl1);
-            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            Name = "Form1";
-            Text = "Lyot Filter Demonstration Instrument Control Panel";
-            Load += Form1_Load;
-            Instrument.ResumeLayout(false);
-            Instrument.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            Focus.ResumeLayout(false);
-            Focus.PerformLayout();
-            Camera.ResumeLayout(false);
-            Camera.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            TuningControlBoardTab.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            HeaterData.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)CompensatorDataGrid).EndInit();
-            ((System.ComponentModel.ISupportInitialize)HeaterDataGrid).EndInit();
-            TempControlBox.ResumeLayout(false);
-            TempControlBox.PerformLayout();
-            PIDSettingBox.ResumeLayout(false);
-            PIDSettingBox.PerformLayout();
-            HeaterRadioBox.ResumeLayout(false);
-            HeaterRadioBox.PerformLayout();
-            PIDRadioBox.ResumeLayout(false);
-            PIDRadioBox.PerformLayout();
-            TuningControlPanel.ResumeLayout(false);
-            TuningControlPanel.PerformLayout();
-            tabControl1.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(737, 665);
+            this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "Form1";
+            this.Text = "Lyot Filter Demonstration Instrument Control Panel";
+            this.Instrument.ResumeLayout(false);
+            this.Instrument.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Focus.ResumeLayout(false);
+            this.Focus.PerformLayout();
+            this.Camera.ResumeLayout(false);
+            this.Camera.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.TuningControlBoardTab.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.HeaterData.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CompensatorDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeaterDataGrid)).EndInit();
+            this.TempControlBox.ResumeLayout(false);
+            this.TempControlBox.PerformLayout();
+            this.PIDSettingBox.ResumeLayout(false);
+            this.PIDSettingBox.PerformLayout();
+            this.HeaterRadioBox.ResumeLayout(false);
+            this.HeaterRadioBox.PerformLayout();
+            this.PIDRadioBox.ResumeLayout(false);
+            this.PIDRadioBox.PerformLayout();
+            this.TuningControlPanel.ResumeLayout(false);
+            this.TuningControlPanel.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -857,7 +845,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TabPage Focus;
+        private new System.Windows.Forms.TabPage Focus;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
@@ -891,9 +879,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox PIDSetField;
         private System.Windows.Forms.GroupBox HeaterRadioBox;
-        private System.Windows.Forms.RadioButton Heater1Radio;
-        private System.Windows.Forms.RadioButton Heater3Radio;
-        private System.Windows.Forms.RadioButton Heater2Radio;
         private System.Windows.Forms.GroupBox PIDRadioBox;
         private System.Windows.Forms.RadioButton ProportionalRadio;
         private System.Windows.Forms.RadioButton DerivativeRadio;
@@ -911,11 +896,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView CompensatorDataGrid;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StageLabelCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn WavelengthCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VoltageCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StageSizeCol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TuningCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeaterLabelColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn KpColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn KiColumn;
@@ -923,5 +903,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AverageTempColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn SetPointColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeaterStatusColumn;
+        private System.Windows.Forms.CheckBox Heater3checkBox;
+        private System.Windows.Forms.CheckBox Heater2checkBox;
+        private System.Windows.Forms.CheckBox Heater1checkBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StageLabelCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WavelengthCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VoltageCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StageSizeCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TuningCol;
     }
 }

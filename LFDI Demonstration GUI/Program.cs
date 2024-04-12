@@ -25,7 +25,7 @@ namespace LFDI_Demonstration_GUI
             
 
             Console.WriteLine("hello world");
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            //
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

@@ -181,36 +181,33 @@ namespace LFDI_Demonstration_GUI
 
         }
 
-        private void Heater1Radio_CheckedChanged(object sender, EventArgs e)
-        {
-            if (Heater1Radio.Checked)
-            {
-                Heater2Radio.Checked = !Heater1Radio.Checked;
-                Heater3Radio.Checked = !Heater1Radio.Checked;
-            }
-        }
-        private void Heater2Radio_CheckedChanged(object sender, EventArgs e)
-        {
-            if (Heater2Radio.Checked)
-            {
-                Heater1Radio.Checked = !Heater2Radio.Checked;
-                Heater3Radio.Checked = !Heater2Radio.Checked;
-            }
-        }
-        private void Heater3Radio_CheckedChanged(object sender, EventArgs e)
-        {
-            if (Heater3Radio.Checked)
-            {
-                Heater1Radio.Checked = !Heater3Radio.Checked;
-                Heater2Radio.Checked = !Heater3Radio.Checked;
-            }
-        }
-
         private void PIDSetField_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+        private void SendPIDControlCommand(string command, string heater)
+        {
+            command += heater;
+            if (ProportionalRadio.Checked)
+            {
+                command += "KP_";
+            }
+            else if (IntegralRadio.Checked)
+            {
+                command += "KI_";
+            }
+            else if (DerivativeRadio.Checked)
+            {
+                command += "KD_";
+            }
+            command += PIDSetField.Text;
+            while (portLocked) ;
+            portLocked = true;
+            port.WriteLine(command);
+            portLocked = false;
+
+        }
         private void PIDSetButton_Click(object sender, EventArgs e)
         {
             if (port.IsOpen)
@@ -219,36 +216,22 @@ namespace LFDI_Demonstration_GUI
                 string command = "SET_HEATER_";
                 if (float.TryParse(PIDSetField.Text, out f))
                 {
-                    if (Heater1Radio.Checked)
+                
+                    if (Heater1checkBox.Checked)
                     {
-                        command += "1_";
+                        SendPIDControlCommand(command, "1_");
+                        
                     }
-                    else if (Heater2Radio.Checked)
+                    else if (Heater2checkBox.Checked)
                     {
-                        command += "2_";
-                    }
-                    else if (Heater3Radio.Checked)
-                    {
-                        command += "3_";
-                    }
-                    if (ProportionalRadio.Checked)
-                    {
-                        command += "KP_";
-                    }
-                    else if (IntegralRadio.Checked)
-                    {
-                        command += "KI_";
-                    }
-                    else if (DerivativeRadio.Checked)
-                    {
-                        command += "KD_";
-                    }
-                    command += PIDSetField.Text;
-                    while (portLocked) ;
-                    portLocked = true;
-                    port.WriteLine(command);
-                    portLocked = false;
+                        SendPIDControlCommand(command, "2_");
 
+                    }
+                    else if (Heater3checkBox.Checked)
+                    {
+                       SendPIDControlCommand(command, "3_");
+
+                    }                
 
                 }
             }
@@ -449,6 +432,11 @@ namespace LFDI_Demonstration_GUI
         private void HK_Tick(object sender, ElapsedEventArgs e)
         {
             get_hk();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
