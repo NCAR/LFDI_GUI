@@ -132,6 +132,22 @@ namespace LFDI_Demonstration_GUI
                 port.Open();
 
                 ComStatus.Text = "Staus: " + PortSelector.SelectedItem.ToString() + " open.";
+                if (port.IsOpen)
+                {
+                    if (!HK_Timer.Enabled)
+                    {
+                        HK_Timer.Elapsed += HK_Tick;
+                        HK_Timer.Interval = 500; // Update Every Half Second
+                        HK_Timer.Enabled = true;
+                        HK_Timer.Start();
+                    }
+                    else
+                    {
+                        HK_Timer.Stop();
+                        HK_Timer.Enabled = false;
+
+                    }
+                }
 
             }
             catch
@@ -222,12 +238,12 @@ namespace LFDI_Demonstration_GUI
                         SendPIDControlCommand(command, "1_");
                         
                     }
-                    else if (Heater2checkBox.Checked)
+                    if (Heater2checkBox.Checked)
                     {
                         SendPIDControlCommand(command, "2_");
 
                     }
-                    else if (Heater3checkBox.Checked)
+                    if (Heater3checkBox.Checked)
                     {
                        SendPIDControlCommand(command, "3_");
 
@@ -434,10 +450,6 @@ namespace LFDI_Demonstration_GUI
             get_hk();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

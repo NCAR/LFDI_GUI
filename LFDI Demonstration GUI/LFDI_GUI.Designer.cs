@@ -57,14 +57,17 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.TuningControlBoardTab = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.LFDIReturn = new System.Windows.Forms.Label();
             this.RefreshCom = new System.Windows.Forms.Button();
             this.PortSelector = new System.Windows.Forms.ComboBox();
             this.button9 = new System.Windows.Forms.Button();
             this.ComStatus = new System.Windows.Forms.Label();
             this.HeaterData = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.CompensatorDataGrid = new System.Windows.Forms.DataGridView();
+            this.StageLabelCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WavelengthCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VoltageCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StageSizeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TuningCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeaterDataGrid = new System.Windows.Forms.DataGridView();
             this.TempControlBox = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -75,6 +78,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.PIDSetField = new System.Windows.Forms.TextBox();
             this.HeaterRadioBox = new System.Windows.Forms.GroupBox();
+            this.Heater3checkBox = new System.Windows.Forms.CheckBox();
+            this.Heater2checkBox = new System.Windows.Forms.CheckBox();
+            this.Heater1checkBox = new System.Windows.Forms.CheckBox();
             this.PIDRadioBox = new System.Windows.Forms.GroupBox();
             this.ProportionalRadio = new System.Windows.Forms.RadioButton();
             this.DerivativeRadio = new System.Windows.Forms.RadioButton();
@@ -88,9 +94,6 @@
             this.WavelengthInput = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Heater1checkBox = new System.Windows.Forms.CheckBox();
-            this.Heater2checkBox = new System.Windows.Forms.CheckBox();
-            this.Heater3checkBox = new System.Windows.Forms.CheckBox();
             this.HeaterLabelColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KpColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KiColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -98,11 +101,6 @@
             this.AverageTempColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SetPointColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeaterStatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StageLabelCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.WavelengthCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VoltageCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StageSizeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TuningCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Instrument.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Focus.SuspendLayout();
@@ -381,52 +379,44 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Azure;
-            this.groupBox1.Controls.Add(this.LFDIReturn);
             this.groupBox1.Controls.Add(this.RefreshCom);
             this.groupBox1.Controls.Add(this.PortSelector);
             this.groupBox1.Controls.Add(this.button9);
             this.groupBox1.Controls.Add(this.ComStatus);
             this.groupBox1.Location = new System.Drawing.Point(473, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(246, 192);
+            this.groupBox1.Size = new System.Drawing.Size(284, 192);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COM ports";
             // 
-            // LFDIReturn
-            // 
-            this.LFDIReturn.AutoSize = true;
-            this.LFDIReturn.Location = new System.Drawing.Point(5, 157);
-            this.LFDIReturn.Name = "LFDIReturn";
-            this.LFDIReturn.Size = new System.Drawing.Size(45, 13);
-            this.LFDIReturn.TabIndex = 13;
-            this.LFDIReturn.Text = "Return:";
-            // 
             // RefreshCom
             // 
-            this.RefreshCom.Location = new System.Drawing.Point(162, 95);
+            this.RefreshCom.Location = new System.Drawing.Point(193, 90);
             this.RefreshCom.Name = "RefreshCom";
             this.RefreshCom.Size = new System.Drawing.Size(79, 38);
             this.RefreshCom.TabIndex = 12;
             this.RefreshCom.Text = "Refresh";
             this.RefreshCom.UseVisualStyleBackColor = true;
+            this.RefreshCom.Click += new System.EventHandler(this.RefreshCom_Click);
             // 
             // PortSelector
             // 
             this.PortSelector.FormattingEnabled = true;
-            this.PortSelector.Location = new System.Drawing.Point(5, 22);
+            this.PortSelector.Location = new System.Drawing.Point(8, 19);
             this.PortSelector.Name = "PortSelector";
-            this.PortSelector.Size = new System.Drawing.Size(236, 21);
+            this.PortSelector.Size = new System.Drawing.Size(264, 21);
             this.PortSelector.TabIndex = 8;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(162, 49);
+            this.button9.Location = new System.Drawing.Point(193, 46);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(79, 38);
             this.button9.TabIndex = 10;
             this.button9.Text = "Connect";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // ComStatus
             // 
@@ -440,24 +430,14 @@
             // HeaterData
             // 
             this.HeaterData.BackColor = System.Drawing.Color.Azure;
-            this.HeaterData.Controls.Add(this.button5);
             this.HeaterData.Controls.Add(this.CompensatorDataGrid);
             this.HeaterData.Controls.Add(this.HeaterDataGrid);
             this.HeaterData.Location = new System.Drawing.Point(7, 338);
             this.HeaterData.Name = "HeaterData";
-            this.HeaterData.Size = new System.Drawing.Size(722, 296);
+            this.HeaterData.Size = new System.Drawing.Size(750, 296);
             this.HeaterData.TabIndex = 7;
             this.HeaterData.TabStop = false;
             this.HeaterData.Text = "House Keeping";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(648, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(64, 20);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Refresh";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // CompensatorDataGrid
             // 
@@ -468,11 +448,36 @@
             this.VoltageCol,
             this.StageSizeCol,
             this.TuningCol});
-            this.CompensatorDataGrid.Location = new System.Drawing.Point(5, 138);
+            this.CompensatorDataGrid.Location = new System.Drawing.Point(5, 160);
             this.CompensatorDataGrid.Name = "CompensatorDataGrid";
             this.CompensatorDataGrid.RowTemplate.Height = 25;
-            this.CompensatorDataGrid.Size = new System.Drawing.Size(547, 130);
+            this.CompensatorDataGrid.Size = new System.Drawing.Size(545, 130);
             this.CompensatorDataGrid.TabIndex = 1;
+            // 
+            // StageLabelCol
+            // 
+            this.StageLabelCol.HeaderText = "Stage Label";
+            this.StageLabelCol.Name = "StageLabelCol";
+            // 
+            // WavelengthCol
+            // 
+            this.WavelengthCol.HeaderText = "Wavelength (nm)";
+            this.WavelengthCol.Name = "WavelengthCol";
+            // 
+            // VoltageCol
+            // 
+            this.VoltageCol.HeaderText = "Voltage (V)";
+            this.VoltageCol.Name = "VoltageCol";
+            // 
+            // StageSizeCol
+            // 
+            this.StageSizeCol.HeaderText = "Stage Size (mm)";
+            this.StageSizeCol.Name = "StageSizeCol";
+            // 
+            // TuningCol
+            // 
+            this.TuningCol.HeaderText = "Tuning";
+            this.TuningCol.Name = "TuningCol";
             // 
             // HeaterDataGrid
             // 
@@ -488,7 +493,7 @@
             this.HeaterDataGrid.Location = new System.Drawing.Point(5, 18);
             this.HeaterDataGrid.Name = "HeaterDataGrid";
             this.HeaterDataGrid.RowTemplate.Height = 25;
-            this.HeaterDataGrid.Size = new System.Drawing.Size(638, 114);
+            this.HeaterDataGrid.Size = new System.Drawing.Size(733, 136);
             this.HeaterDataGrid.TabIndex = 0;
             // 
             // TempControlBox
@@ -514,6 +519,7 @@
             this.button6.TabIndex = 13;
             this.button6.Text = "Heater On";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // TempSetButton
             // 
@@ -523,6 +529,7 @@
             this.TempSetButton.TabIndex = 11;
             this.TempSetButton.Text = "Set";
             this.TempSetButton.UseVisualStyleBackColor = true;
+            this.TempSetButton.Click += new System.EventHandler(this.TempSetButton_Click);
             // 
             // PIDSettingBox
             // 
@@ -556,6 +563,7 @@
             this.PIDSetButton.TabIndex = 10;
             this.PIDSetButton.Text = "Set";
             this.PIDSetButton.UseVisualStyleBackColor = true;
+            this.PIDSetButton.Click += new System.EventHandler(this.PIDSetButton_Click);
             // 
             // label13
             // 
@@ -584,6 +592,36 @@
             this.HeaterRadioBox.TabIndex = 7;
             this.HeaterRadioBox.TabStop = false;
             this.HeaterRadioBox.Text = "Heater Zones";
+            // 
+            // Heater3checkBox
+            // 
+            this.Heater3checkBox.AutoSize = true;
+            this.Heater3checkBox.Location = new System.Drawing.Point(6, 78);
+            this.Heater3checkBox.Name = "Heater3checkBox";
+            this.Heater3checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater3checkBox.TabIndex = 2;
+            this.Heater3checkBox.Text = "H3";
+            this.Heater3checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Heater2checkBox
+            // 
+            this.Heater2checkBox.AutoSize = true;
+            this.Heater2checkBox.Location = new System.Drawing.Point(6, 51);
+            this.Heater2checkBox.Name = "Heater2checkBox";
+            this.Heater2checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater2checkBox.TabIndex = 1;
+            this.Heater2checkBox.Text = "H2";
+            this.Heater2checkBox.UseVisualStyleBackColor = true;
+            // 
+            // Heater1checkBox
+            // 
+            this.Heater1checkBox.AutoSize = true;
+            this.Heater1checkBox.Location = new System.Drawing.Point(6, 24);
+            this.Heater1checkBox.Name = "Heater1checkBox";
+            this.Heater1checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater1checkBox.TabIndex = 0;
+            this.Heater1checkBox.Text = "H1";
+            this.Heater1checkBox.UseVisualStyleBackColor = true;
             // 
             // PIDRadioBox
             // 
@@ -668,6 +706,7 @@
             this.button8.TabIndex = 8;
             this.button8.Text = "Tuning On";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // WavelengthSet
             // 
@@ -677,6 +716,7 @@
             this.WavelengthSet.TabIndex = 7;
             this.WavelengthSet.Text = "Set";
             this.WavelengthSet.UseVisualStyleBackColor = true;
+            this.WavelengthSet.Click += new System.EventHandler(this.WavelengthSet_Click);
             // 
             // label11
             // 
@@ -706,37 +746,6 @@
             this.tabControl1.Size = new System.Drawing.Size(957, 666);
             this.tabControl1.TabIndex = 0;
             // 
-            // Heater1checkBox
-            // 
-            this.Heater1checkBox.AutoSize = true;
-            this.Heater1checkBox.Location = new System.Drawing.Point(6, 24);
-            this.Heater1checkBox.Name = "Heater1checkBox";
-            this.Heater1checkBox.Size = new System.Drawing.Size(40, 17);
-            this.Heater1checkBox.TabIndex = 0;
-            this.Heater1checkBox.Text = "H1";
-            this.Heater1checkBox.UseVisualStyleBackColor = true;
-            this.Heater1checkBox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // Heater2checkBox
-            // 
-            this.Heater2checkBox.AutoSize = true;
-            this.Heater2checkBox.Location = new System.Drawing.Point(6, 51);
-            this.Heater2checkBox.Name = "Heater2checkBox";
-            this.Heater2checkBox.Size = new System.Drawing.Size(40, 17);
-            this.Heater2checkBox.TabIndex = 1;
-            this.Heater2checkBox.Text = "H2";
-            this.Heater2checkBox.UseVisualStyleBackColor = true;
-            // 
-            // Heater3checkBox
-            // 
-            this.Heater3checkBox.AutoSize = true;
-            this.Heater3checkBox.Location = new System.Drawing.Point(6, 78);
-            this.Heater3checkBox.Name = "Heater3checkBox";
-            this.Heater3checkBox.Size = new System.Drawing.Size(40, 17);
-            this.Heater3checkBox.TabIndex = 2;
-            this.Heater3checkBox.Text = "H3";
-            this.Heater3checkBox.UseVisualStyleBackColor = true;
-            // 
             // HeaterLabelColumn
             // 
             this.HeaterLabelColumn.HeaderText = "Heater Zone";
@@ -759,7 +768,7 @@
             // 
             // AverageTempColumn
             // 
-            this.AverageTempColumn.HeaderText = "AverageTemp Over 2 Sec (C)";
+            this.AverageTempColumn.HeaderText = "AvgTemp 2 Sec (C)";
             this.AverageTempColumn.Name = "AverageTempColumn";
             // 
             // SetPointColumn
@@ -772,36 +781,11 @@
             this.HeaterStatusColumn.HeaderText = "HeaterStatus";
             this.HeaterStatusColumn.Name = "HeaterStatusColumn";
             // 
-            // StageLabelCol
-            // 
-            this.StageLabelCol.HeaderText = "Stage Label";
-            this.StageLabelCol.Name = "StageLabelCol";
-            // 
-            // WavelengthCol
-            // 
-            this.WavelengthCol.HeaderText = "Wavelength (nm)";
-            this.WavelengthCol.Name = "WavelengthCol";
-            // 
-            // VoltageCol
-            // 
-            this.VoltageCol.HeaderText = "Voltage (V)";
-            this.VoltageCol.Name = "VoltageCol";
-            // 
-            // StageSizeCol
-            // 
-            this.StageSizeCol.HeaderText = "Stage Size (mm)";
-            this.StageSizeCol.Name = "StageSizeCol";
-            // 
-            // TuningCol
-            // 
-            this.TuningCol.HeaderText = "Tuning";
-            this.TuningCol.Name = "TuningCol";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 665);
+            this.ClientSize = new System.Drawing.Size(767, 665);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -890,19 +874,10 @@
         private System.Windows.Forms.ComboBox PortSelector;
         private System.Windows.Forms.Button RefreshCom;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label LFDIReturn;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DataGridView HeaterDataGrid;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView CompensatorDataGrid;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HeaterLabelColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KpColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KiColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KdColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AverageTempColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SetPointColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HeaterStatusColumn;
         private System.Windows.Forms.CheckBox Heater3checkBox;
         private System.Windows.Forms.CheckBox Heater2checkBox;
         private System.Windows.Forms.CheckBox Heater1checkBox;
@@ -911,5 +886,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn VoltageCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn StageSizeCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn TuningCol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeaterLabelColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KpColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KiColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KdColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AverageTempColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SetPointColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeaterStatusColumn;
     }
 }

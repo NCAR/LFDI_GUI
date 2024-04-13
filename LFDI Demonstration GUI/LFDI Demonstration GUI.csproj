@@ -8,8 +8,13 @@
 	  
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>LFDI.ico</ApplicationIcon>
 
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="LFDI.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ScottPlot" Version="5.0.21" />
