@@ -48,14 +48,30 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.Camera = new System.Windows.Forms.TabPage();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.TuningControlBoardTab = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.SlopeInterceptEquationLabel = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.InterceptSetbutton = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.IntercepttextBox = new System.Windows.Forms.TextBox();
+            this.SlopetextBox8 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.RefreshCom = new System.Windows.Forms.Button();
             this.PortSelector = new System.Windows.Forms.ComboBox();
@@ -69,6 +85,13 @@
             this.StageSizeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TuningCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeaterDataGrid = new System.Windows.Forms.DataGridView();
+            this.HeaterLabelColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KpColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KiColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KdColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AverageTempColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SetPointColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeaterStatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TempControlBox = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.TempSetButton = new System.Windows.Forms.Button();
@@ -94,19 +117,25 @@
             this.WavelengthInput = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.HeaterLabelColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KpColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KiColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KdColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AverageTempColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SetPointColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HeaterStatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.VoltageControlBox = new System.Windows.Forms.GroupBox();
+            this.VoltageSetBox = new System.Windows.Forms.TextBox();
+            this.StagesSelectorBox = new System.Windows.Forms.GroupBox();
+            this.Stage3CheckBox = new System.Windows.Forms.CheckBox();
+            this.Stage2CheckBox = new System.Windows.Forms.CheckBox();
+            this.Stage1CheckBox = new System.Windows.Forms.CheckBox();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.label16 = new System.Windows.Forms.Label();
+            this.VoltageSetButton = new System.Windows.Forms.Button();
             this.Instrument.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Focus.SuspendLayout();
             this.Camera.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.TuningControlBoardTab.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.HeaterData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CompensatorDataGrid)).BeginInit();
@@ -117,6 +146,8 @@
             this.PIDRadioBox.SuspendLayout();
             this.TuningControlPanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.VoltageControlBox.SuspendLayout();
+            this.StagesSelectorBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Instrument
@@ -132,7 +163,7 @@
             this.Instrument.Location = new System.Drawing.Point(4, 22);
             this.Instrument.Name = "Instrument";
             this.Instrument.Padding = new System.Windows.Forms.Padding(3);
-            this.Instrument.Size = new System.Drawing.Size(949, 640);
+            this.Instrument.Size = new System.Drawing.Size(760, 640);
             this.Instrument.TabIndex = 3;
             this.Instrument.Text = "Instrument";
             // 
@@ -210,7 +241,7 @@
             this.Focus.Location = new System.Drawing.Point(4, 22);
             this.Focus.Name = "Focus";
             this.Focus.Padding = new System.Windows.Forms.Padding(3);
-            this.Focus.Size = new System.Drawing.Size(949, 640);
+            this.Focus.Size = new System.Drawing.Size(760, 640);
             this.Focus.TabIndex = 2;
             this.Focus.Text = "Focus";
             // 
@@ -293,77 +324,153 @@
             // Camera
             // 
             this.Camera.BackColor = System.Drawing.Color.SkyBlue;
-            this.Camera.Controls.Add(this.textBox7);
-            this.Camera.Controls.Add(this.textBox6);
-            this.Camera.Controls.Add(this.textBox5);
-            this.Camera.Controls.Add(this.textBox4);
+            this.Camera.Controls.Add(this.groupBox5);
+            this.Camera.Controls.Add(this.groupBox4);
             this.Camera.Controls.Add(this.label9);
-            this.Camera.Controls.Add(this.label8);
-            this.Camera.Controls.Add(this.pictureBox2);
             this.Camera.Location = new System.Drawing.Point(4, 22);
             this.Camera.Name = "Camera";
             this.Camera.Padding = new System.Windows.Forms.Padding(3);
-            this.Camera.Size = new System.Drawing.Size(949, 640);
+            this.Camera.Size = new System.Drawing.Size(760, 640);
             this.Camera.TabIndex = 1;
             this.Camera.Text = "Camera";
             // 
-            // textBox7
+            // groupBox5
             // 
-            this.textBox7.Location = new System.Drawing.Point(3, 376);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(86, 20);
-            this.textBox7.TabIndex = 8;
+            this.groupBox5.BackColor = System.Drawing.Color.AliceBlue;
+            this.groupBox5.Controls.Add(this.pictureBox2);
+            this.groupBox5.Location = new System.Drawing.Point(194, 18);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(560, 551);
+            this.groupBox5.TabIndex = 15;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Camera";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(6, 25);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(548, 457);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.AliceBlue;
+            this.groupBox4.Controls.Add(this.button13);
+            this.groupBox4.Controls.Add(this.textBox6);
+            this.groupBox4.Controls.Add(this.button10);
+            this.groupBox4.Controls.Add(this.button11);
+            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.button12);
+            this.groupBox4.Controls.Add(this.textBox5);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Location = new System.Drawing.Point(4, 24);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(184, 177);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Camera Controls";
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(9, 139);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(164, 23);
+            this.button13.TabIndex = 14;
+            this.button13.Text = "Capture Image";
+            this.button13.UseVisualStyleBackColor = true;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(7, 269);
+            this.textBox6.Location = new System.Drawing.Point(6, 113);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(86, 20);
             this.textBox6.TabIndex = 7;
             // 
-            // textBox5
+            // button10
             // 
-            this.textBox5.Location = new System.Drawing.Point(7, 156);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(86, 20);
-            this.textBox5.TabIndex = 6;
+            this.button10.Location = new System.Drawing.Point(98, 35);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 11;
+            this.button10.Text = "Set";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(98, 74);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Set";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(7, 40);
+            this.textBox4.Location = new System.Drawing.Point(6, 35);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(86, 20);
             this.textBox4.TabIndex = 5;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(66, 13);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Binning (1-4)";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(98, 110);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "Set";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(6, 74);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(86, 20);
+            this.textBox5.TabIndex = 6;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 58);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(73, 13);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Exposure (ms)";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 97);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(29, 13);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "Gain";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(241, 37);
+            this.label9.Location = new System.Drawing.Point(250, 24);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 13);
             this.label9.TabIndex = 4;
             this.label9.Text = "Current Image";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 24);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Binning";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(241, 53);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(273, 302);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
             // TuningControlBoardTab
             // 
             this.TuningControlBoardTab.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.TuningControlBoardTab.Controls.Add(this.VoltageControlBox);
+            this.TuningControlBoardTab.Controls.Add(this.groupBox2);
             this.TuningControlBoardTab.Controls.Add(this.groupBox1);
             this.TuningControlBoardTab.Controls.Add(this.HeaterData);
             this.TuningControlBoardTab.Controls.Add(this.TempControlBox);
@@ -372,9 +479,98 @@
             this.TuningControlBoardTab.Location = new System.Drawing.Point(4, 22);
             this.TuningControlBoardTab.Name = "TuningControlBoardTab";
             this.TuningControlBoardTab.Padding = new System.Windows.Forms.Padding(3);
-            this.TuningControlBoardTab.Size = new System.Drawing.Size(949, 640);
+            this.TuningControlBoardTab.Size = new System.Drawing.Size(760, 640);
             this.TuningControlBoardTab.TabIndex = 0;
             this.TuningControlBoardTab.Text = "Tuning Control Board";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Azure;
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.SlopeInterceptEquationLabel);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.InterceptSetbutton);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.IntercepttextBox);
+            this.groupBox2.Controls.Add(this.SlopetextBox8);
+            this.groupBox2.Location = new System.Drawing.Point(474, 202);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(283, 131);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Slope-Intercept";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(221, 13);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "Scott, Ignore this panel it will be removed";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // SlopeInterceptEquationLabel
+            // 
+            this.SlopeInterceptEquationLabel.AutoSize = true;
+            this.SlopeInterceptEquationLabel.Location = new System.Drawing.Point(122, 1);
+            this.SlopeInterceptEquationLabel.Name = "SlopeInterceptEquationLabel";
+            this.SlopeInterceptEquationLabel.Size = new System.Drawing.Size(103, 13);
+            this.SlopeInterceptEquationLabel.TabIndex = 6;
+            this.SlopeInterceptEquationLabel.Text = "y=(0.04)x+(-655.27)";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(7, 87);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 13);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Intercept";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(7, 38);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(39, 13);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Slope:";
+            // 
+            // InterceptSetbutton
+            // 
+            this.InterceptSetbutton.Location = new System.Drawing.Point(113, 103);
+            this.InterceptSetbutton.Name = "InterceptSetbutton";
+            this.InterceptSetbutton.Size = new System.Drawing.Size(75, 23);
+            this.InterceptSetbutton.TabIndex = 3;
+            this.InterceptSetbutton.Text = "Set";
+            this.InterceptSetbutton.UseVisualStyleBackColor = true;
+            this.InterceptSetbutton.Click += new System.EventHandler(this.InterceptSetbutton_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(113, 56);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Set";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_2);
+            // 
+            // IntercepttextBox
+            // 
+            this.IntercepttextBox.Location = new System.Drawing.Point(7, 103);
+            this.IntercepttextBox.Name = "IntercepttextBox";
+            this.IntercepttextBox.Size = new System.Drawing.Size(100, 22);
+            this.IntercepttextBox.TabIndex = 1;
+            // 
+            // SlopetextBox8
+            // 
+            this.SlopetextBox8.Location = new System.Drawing.Point(7, 56);
+            this.SlopetextBox8.Name = "SlopetextBox8";
+            this.SlopetextBox8.Size = new System.Drawing.Size(100, 22);
+            this.SlopetextBox8.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -493,8 +689,43 @@
             this.HeaterDataGrid.Location = new System.Drawing.Point(5, 18);
             this.HeaterDataGrid.Name = "HeaterDataGrid";
             this.HeaterDataGrid.RowTemplate.Height = 25;
-            this.HeaterDataGrid.Size = new System.Drawing.Size(733, 136);
+            this.HeaterDataGrid.Size = new System.Drawing.Size(739, 136);
             this.HeaterDataGrid.TabIndex = 0;
+            // 
+            // HeaterLabelColumn
+            // 
+            this.HeaterLabelColumn.HeaderText = "Heater Zone";
+            this.HeaterLabelColumn.Name = "HeaterLabelColumn";
+            // 
+            // KpColumn
+            // 
+            this.KpColumn.HeaderText = "Kp";
+            this.KpColumn.Name = "KpColumn";
+            // 
+            // KiColumn
+            // 
+            this.KiColumn.HeaderText = "Ki";
+            this.KiColumn.Name = "KiColumn";
+            // 
+            // KdColumn
+            // 
+            this.KdColumn.HeaderText = "Kd";
+            this.KdColumn.Name = "KdColumn";
+            // 
+            // AverageTempColumn
+            // 
+            this.AverageTempColumn.HeaderText = "AvgTemp 2 Sec (C)";
+            this.AverageTempColumn.Name = "AverageTempColumn";
+            // 
+            // SetPointColumn
+            // 
+            this.SetPointColumn.HeaderText = "Set Point (C)";
+            this.SetPointColumn.Name = "SetPointColumn";
+            // 
+            // HeaterStatusColumn
+            // 
+            this.HeaterStatusColumn.HeaderText = "HeaterStatus";
+            this.HeaterStatusColumn.Name = "HeaterStatusColumn";
             // 
             // TempControlBox
             // 
@@ -622,6 +853,7 @@
             this.Heater1checkBox.TabIndex = 0;
             this.Heater1checkBox.Text = "H1";
             this.Heater1checkBox.UseVisualStyleBackColor = true;
+            this.Heater1checkBox.CheckedChanged += new System.EventHandler(this.Heater1checkBox_CheckedChanged);
             // 
             // PIDRadioBox
             // 
@@ -743,43 +975,103 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(957, 666);
+            this.tabControl1.Size = new System.Drawing.Size(768, 666);
             this.tabControl1.TabIndex = 0;
             // 
-            // HeaterLabelColumn
+            // contextMenuStrip1
             // 
-            this.HeaterLabelColumn.HeaderText = "Heater Zone";
-            this.HeaterLabelColumn.Name = "HeaterLabelColumn";
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // KpColumn
+            // VoltageControlBox
             // 
-            this.KpColumn.HeaderText = "Kp";
-            this.KpColumn.Name = "KpColumn";
+            this.VoltageControlBox.BackColor = System.Drawing.Color.Azure;
+            this.VoltageControlBox.Controls.Add(this.VoltageSetButton);
+            this.VoltageControlBox.Controls.Add(this.label16);
+            this.VoltageControlBox.Controls.Add(this.StagesSelectorBox);
+            this.VoltageControlBox.Controls.Add(this.VoltageSetBox);
+            this.VoltageControlBox.Location = new System.Drawing.Point(7, 123);
+            this.VoltageControlBox.Name = "VoltageControlBox";
+            this.VoltageControlBox.Size = new System.Drawing.Size(218, 209);
+            this.VoltageControlBox.TabIndex = 14;
+            this.VoltageControlBox.TabStop = false;
+            this.VoltageControlBox.Text = "Voltage Control";
             // 
-            // KiColumn
+            // VoltageSetBox
             // 
-            this.KiColumn.HeaderText = "Ki";
-            this.KiColumn.Name = "KiColumn";
+            this.VoltageSetBox.Location = new System.Drawing.Point(8, 137);
+            this.VoltageSetBox.Name = "VoltageSetBox";
+            this.VoltageSetBox.Size = new System.Drawing.Size(93, 22);
+            this.VoltageSetBox.TabIndex = 6;
             // 
-            // KdColumn
+            // StagesSelectorBox
             // 
-            this.KdColumn.HeaderText = "Kd";
-            this.KdColumn.Name = "KdColumn";
+            this.StagesSelectorBox.Controls.Add(this.Stage3CheckBox);
+            this.StagesSelectorBox.Controls.Add(this.Stage2CheckBox);
+            this.StagesSelectorBox.Controls.Add(this.Stage1CheckBox);
+            this.StagesSelectorBox.Location = new System.Drawing.Point(5, 21);
+            this.StagesSelectorBox.Name = "StagesSelectorBox";
+            this.StagesSelectorBox.Size = new System.Drawing.Size(94, 89);
+            this.StagesSelectorBox.TabIndex = 10;
+            this.StagesSelectorBox.TabStop = false;
+            this.StagesSelectorBox.Text = "Stage Selector";
             // 
-            // AverageTempColumn
+            // Stage3CheckBox
             // 
-            this.AverageTempColumn.HeaderText = "AvgTemp 2 Sec (C)";
-            this.AverageTempColumn.Name = "AverageTempColumn";
+            this.Stage3CheckBox.AutoSize = true;
+            this.Stage3CheckBox.Location = new System.Drawing.Point(6, 68);
+            this.Stage3CheckBox.Name = "Stage3CheckBox";
+            this.Stage3CheckBox.Size = new System.Drawing.Size(38, 17);
+            this.Stage3CheckBox.TabIndex = 2;
+            this.Stage3CheckBox.Text = "S3";
+            this.Stage3CheckBox.UseVisualStyleBackColor = true;
+            this.Stage3CheckBox.CheckedChanged += new System.EventHandler(this.Stage3CheckBox_CheckedChanged);
             // 
-            // SetPointColumn
+            // Stage2CheckBox
             // 
-            this.SetPointColumn.HeaderText = "Set Point (C)";
-            this.SetPointColumn.Name = "SetPointColumn";
+            this.Stage2CheckBox.AutoSize = true;
+            this.Stage2CheckBox.Location = new System.Drawing.Point(6, 45);
+            this.Stage2CheckBox.Name = "Stage2CheckBox";
+            this.Stage2CheckBox.Size = new System.Drawing.Size(38, 17);
+            this.Stage2CheckBox.TabIndex = 1;
+            this.Stage2CheckBox.Text = "S2";
+            this.Stage2CheckBox.UseVisualStyleBackColor = true;
+            this.Stage2CheckBox.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // HeaterStatusColumn
+            // Stage1CheckBox
             // 
-            this.HeaterStatusColumn.HeaderText = "HeaterStatus";
-            this.HeaterStatusColumn.Name = "HeaterStatusColumn";
+            this.Stage1CheckBox.AutoSize = true;
+            this.Stage1CheckBox.Location = new System.Drawing.Point(6, 24);
+            this.Stage1CheckBox.Name = "Stage1CheckBox";
+            this.Stage1CheckBox.Size = new System.Drawing.Size(38, 17);
+            this.Stage1CheckBox.TabIndex = 0;
+            this.Stage1CheckBox.Text = "S1";
+            this.Stage1CheckBox.UseVisualStyleBackColor = true;
+            this.Stage1CheckBox.CheckedChanged += new System.EventHandler(this.Stage1CheckBox_CheckedChanged);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(8, 119);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(82, 13);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "Voltage (Vp2p)";
+            // 
+            // VoltageSetButton
+            // 
+            this.VoltageSetButton.Location = new System.Drawing.Point(8, 166);
+            this.VoltageSetButton.Name = "VoltageSetButton";
+            this.VoltageSetButton.Size = new System.Drawing.Size(84, 25);
+            this.VoltageSetButton.TabIndex = 12;
+            this.VoltageSetButton.Text = "Set";
+            this.VoltageSetButton.UseVisualStyleBackColor = true;
+            this.VoltageSetButton.Click += new System.EventHandler(this.VoltageSetButton_Click);
             // 
             // Form1
             // 
@@ -797,8 +1089,13 @@
             this.Focus.PerformLayout();
             this.Camera.ResumeLayout(false);
             this.Camera.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.TuningControlBoardTab.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.HeaterData.ResumeLayout(false);
@@ -815,6 +1112,10 @@
             this.TuningControlPanel.ResumeLayout(false);
             this.TuningControlPanel.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.VoltageControlBox.ResumeLayout(false);
+            this.VoltageControlBox.PerformLayout();
+            this.StagesSelectorBox.ResumeLayout(false);
+            this.StagesSelectorBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -839,7 +1140,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage Camera;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
@@ -893,5 +1193,32 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AverageTempColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn SetPointColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeaterStatusColumn;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label SlopeInterceptEquationLabel;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button InterceptSetbutton;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox IntercepttextBox;
+        private System.Windows.Forms.TextBox SlopetextBox8;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.GroupBox VoltageControlBox;
+        private System.Windows.Forms.GroupBox StagesSelectorBox;
+        private System.Windows.Forms.CheckBox Stage3CheckBox;
+        private System.Windows.Forms.CheckBox Stage2CheckBox;
+        private System.Windows.Forms.CheckBox Stage1CheckBox;
+        private System.Windows.Forms.TextBox VoltageSetBox;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.Button VoltageSetButton;
     }
 }

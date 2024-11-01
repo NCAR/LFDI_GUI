@@ -26,12 +26,13 @@ namespace LFDI_Demonstration_GUI
         string[] heater1 = null;
         string[] heater2 = null;
         string[] heater3 = null;
-
+        
         string[] compensator1 = null;
         string[] compensator2 = null;
         string[] compensator3 = null;
         System.Timers.Timer HK_Timer = new System.Timers.Timer(2000);
-
+        string slope = "0.04";
+        string intercept = "-655.27";
 
 
 
@@ -450,7 +451,130 @@ namespace LFDI_Demonstration_GUI
             get_hk();
         }
 
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateSlopeInterceptLabel()
+        {
+            SlopeInterceptEquationLabel.Text = "y=(" + slope + ")+(" + intercept + ")";
+        }
+
+        private void button5_Click_2(object sender, EventArgs e)
+        {
+            if (port.IsOpen)
+            {
+                float f;
+                string command = "SET_SLOPE_";
+                if (float.TryParse(SlopetextBox8.Text, out f))
+                {
+                    command += SlopetextBox8.Text;
+                    while (portLocked) ; portLocked = true;
+                    port.WriteLine(command);
+                    portLocked = false;
+                    slope = SlopetextBox8.Text;
+                    updateSlopeInterceptLabel();
+                }
+            }
+        }
+
+        private void InterceptSetbutton_Click(object sender, EventArgs e)
+        {
+            if (port.IsOpen)
+            {
+                float f;
+                string command = "SET_INT_";
+                if (float.TryParse(IntercepttextBox.Text, out f))
+                {
+                    command += IntercepttextBox.Text;
+                    while (portLocked) ; portLocked = true;
+                    port.WriteLine(command);
+                    portLocked = false;
+                    intercept = IntercepttextBox.Text;
+                    updateSlopeInterceptLabel();
+                }
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Heater1checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Stage1CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Stage3CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VoltageSetButton_Click(object sender, EventArgs e)
+        {
+            string command = null;
+            if (button8.Text == "Stop Tuning")
+            {
+                command = "SET_TUNE_OFF";
+                button8.Text = "Tuning On";
+                button8.BackColor = DefaultBackColor;
+                while (portLocked) ; portLocked = true;
+                port.WriteLine(command);
+                portLocked = false;
+            }
+            
+            if (port.IsOpen)
+            {
+
+                float f;
+                command = "SET_VOLTAGE_";
+                if (float.TryParse(VoltageSetBox.Text, out f))
+                {
+
+                    if (Stage1CheckBox.Checked)
+                    {
+                        SendVoltageControlCommand(command, "1_");
+
+                    }
+                    if (Stage2CheckBox.Checked)
+                    {
+                        SendVoltageControlCommand(command, "2_");
+
+                    }
+                    if (Stage3CheckBox.Checked)
+                    {
+                        SendVoltageControlCommand(command, "3_");
+
+                    }
+
+                }
+            }
+        }
+        private void SendVoltageControlCommand(string command, string stage)
+        {
+            command += stage;
+
+            command += VoltageSetBox.Text;
+            while (portLocked) ;
+            portLocked = true;
+            port.WriteLine(command);
+            portLocked = false;
+
+        }
     }
+    
 
 }
 
