@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LFDI Demonstration GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06638c1a73f19d3b2fab54219c8bccebd0ba1da6")]
 [assembly: System.Reflection.AssemblyProductAttribute("LFDI Demonstration GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LFDI Demonstration GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
