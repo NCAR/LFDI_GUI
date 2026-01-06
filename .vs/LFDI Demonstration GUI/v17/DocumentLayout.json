@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 255,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,10 +73,6 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LFDI Demonstration GUI",
@@ -85,8 +81,7 @@
               "ToolTip": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
               "RelativeToolTip": "LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-05T01:54:53.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T01:54:53.257Z"
             },
             {
               "$type": "Document",
@@ -125,6 +120,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T01:54:55.997Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
