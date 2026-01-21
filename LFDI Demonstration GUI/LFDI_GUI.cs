@@ -373,7 +373,7 @@ namespace LFDI_Demonstration_GUI
 
         //Parse the HK Data
         //HK Data Format:
-        //H[N]\t[kp]\t[ki]\t[kd]\t[Temperature]\t[setpoint]\n
+        //H[N]\t[kp]\t[ki]\t[kd]\t[Temperature]\t[setpoint]\t[HeaterStatus]\t[Current]\n
         //C[N]\t[Wavelength]\t[voltage]\t[stagesize]\n
         //Where N is the heater number 1 - 3
         //kp is the proportional gain in 3.2f format
@@ -381,6 +381,8 @@ namespace LFDI_Demonstration_GUI
         //kd is the derivative gain in 3.2f format
         //Temperature is the current temperature in 3.2f format
         //Setpoint is the current setpoint in 3.2f format
+        //HeaterStatus is the heater status
+        //Current is the current value in 4.0f format
         //Wavelength is the current wavelength in 3.2f format
         //Voltage is the current voltage in 3.2f format
         //Stagesize is the current stagesize in 2.2f format

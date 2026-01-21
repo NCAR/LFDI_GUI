@@ -315,7 +315,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win7-x86": {
+    ".NETFramework,Version=v4.8/win-x86": {
       "OpenTK/3.1.0": {
         "type": "package",
         "compile": {
@@ -1199,23 +1199,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mjeffers\\.nuget\\packages\\": {},
+    "C:\\Users\\iguser\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mjeffers\\Desktop\\Github\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
+      "projectUniqueName": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
       "projectName": "LFDI Demonstration GUI",
-      "projectPath": "C:\\Users\\mjeffers\\Desktop\\Github\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
-      "packagesPath": "C:\\Users\\mjeffers\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mjeffers\\Desktop\\Github\\LFDI_GUI\\LFDI Demonstration GUI\\obj\\",
+      "projectPath": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
+      "packagesPath": "C:\\Users\\iguser\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mjeffers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\iguser\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1237,7 +1237,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net48": {
@@ -1260,11 +1266,11 @@
             "version": "[6.0.0, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
-      "win7-x86": {
+      "win-x86": {
         "#import": []
       }
     }

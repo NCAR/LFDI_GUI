@@ -92,6 +92,7 @@
             this.AverageTempColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SetPointColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeaterStatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CurrentColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TempControlBox = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.TempSetButton = new System.Windows.Forms.Button();
@@ -685,7 +686,8 @@
             this.KdColumn,
             this.AverageTempColumn,
             this.SetPointColumn,
-            this.HeaterStatusColumn});
+            this.HeaterStatusColumn,
+            this.CurrentColumn});
             this.HeaterDataGrid.Location = new System.Drawing.Point(5, 18);
             this.HeaterDataGrid.Name = "HeaterDataGrid";
             this.HeaterDataGrid.RowTemplate.Height = 25;
@@ -726,6 +728,11 @@
             // 
             this.HeaterStatusColumn.HeaderText = "HeaterStatus";
             this.HeaterStatusColumn.Name = "HeaterStatusColumn";
+            // 
+            // CurrentColumn
+            // 
+            this.CurrentColumn.HeaderText = "Current";
+            this.CurrentColumn.Name = "CurrentColumn";
             // 
             // TempControlBox
             // 
@@ -1193,6 +1200,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AverageTempColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn SetPointColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeaterStatusColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CurrentColumn;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label SlopeInterceptEquationLabel;
