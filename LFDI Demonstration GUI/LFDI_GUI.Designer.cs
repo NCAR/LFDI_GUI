@@ -1,4 +1,4 @@
-﻿namespace LFDI_Demonstration_GUI
+namespace LFDI_Demonstration_GUI
 {
     partial class Form1
     {
@@ -63,6 +63,16 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.TuningControlBoardTab = new System.Windows.Forms.TabPage();
+            this.VoltageControlBox = new System.Windows.Forms.GroupBox();
+            this.Stage3Slider = new System.Windows.Forms.TrackBar();
+            this.Stage2Slider = new System.Windows.Forms.TrackBar();
+            this.Stage1Slider = new System.Windows.Forms.TrackBar();
+            this.Stage3VoltageNumeric = new System.Windows.Forms.NumericUpDown();
+            this.Stage2VoltageNumeric = new System.Windows.Forms.NumericUpDown();
+            this.Stage1VoltageNumeric = new System.Windows.Forms.NumericUpDown();
+            this.labelStage3 = new System.Windows.Forms.Label();
+            this.labelStage2 = new System.Windows.Forms.Label();
+            this.labelStage1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.SlopeInterceptEquationLabel = new System.Windows.Forms.Label();
@@ -119,15 +129,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.VoltageControlBox = new System.Windows.Forms.GroupBox();
-            this.VoltageSetBox = new System.Windows.Forms.TextBox();
-            this.StagesSelectorBox = new System.Windows.Forms.GroupBox();
-            this.Stage3CheckBox = new System.Windows.Forms.CheckBox();
-            this.Stage2CheckBox = new System.Windows.Forms.CheckBox();
-            this.Stage1CheckBox = new System.Windows.Forms.CheckBox();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label16 = new System.Windows.Forms.Label();
-            this.VoltageSetButton = new System.Windows.Forms.Button();
             this.Instrument.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Focus.SuspendLayout();
@@ -136,6 +138,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.TuningControlBoardTab.SuspendLayout();
+            this.VoltageControlBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage3Slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage2Slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage1Slider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage3VoltageNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage2VoltageNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage1VoltageNumeric)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.HeaterData.SuspendLayout();
@@ -147,8 +156,6 @@
             this.PIDRadioBox.SuspendLayout();
             this.TuningControlPanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.VoltageControlBox.SuspendLayout();
-            this.StagesSelectorBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Instrument
@@ -161,10 +168,11 @@
             this.Instrument.Controls.Add(this.label1);
             this.Instrument.Controls.Add(this.button1);
             this.Instrument.Controls.Add(this.pictureBox1);
-            this.Instrument.Location = new System.Drawing.Point(4, 22);
+            this.Instrument.Location = new System.Drawing.Point(4, 25);
+            this.Instrument.Margin = new System.Windows.Forms.Padding(4);
             this.Instrument.Name = "Instrument";
-            this.Instrument.Padding = new System.Windows.Forms.Padding(3);
-            this.Instrument.Size = new System.Drawing.Size(760, 640);
+            this.Instrument.Padding = new System.Windows.Forms.Padding(4);
+            this.Instrument.Size = new System.Drawing.Size(1459, 1162);
             this.Instrument.TabIndex = 3;
             this.Instrument.Text = "Instrument";
             // 
@@ -172,59 +180,66 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(260, 367);
+            this.label3.Location = new System.Drawing.Point(347, 452);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(66, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "SavePath";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(260, 383);
+            this.textBox2.Location = new System.Drawing.Point(347, 471);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 20);
+            this.textBox2.Size = new System.Drawing.Size(321, 22);
             this.textBox2.TabIndex = 5;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.textBox1.Location = new System.Drawing.Point(23, 87);
+            this.textBox1.Location = new System.Drawing.Point(31, 107);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 43);
+            this.textBox1.Size = new System.Drawing.Size(153, 52);
             this.textBox1.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 60);
+            this.label2.Location = new System.Drawing.Point(31, 74);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(79, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Wavelength";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(260, 20);
+            this.label1.Location = new System.Drawing.Point(347, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Current Image";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(260, 409);
+            this.button1.Location = new System.Drawing.Point(347, 503);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 45);
+            this.button1.Size = new System.Drawing.Size(209, 55);
             this.button1.TabIndex = 2;
             this.button1.Text = "Capture Image";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(260, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(347, 59);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 302);
+            this.pictureBox1.Size = new System.Drawing.Size(364, 372);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -239,36 +254,40 @@
             this.Focus.Controls.Add(this.button3);
             this.Focus.Controls.Add(this.button2);
             this.Focus.Controls.Add(this.label4);
-            this.Focus.Location = new System.Drawing.Point(4, 22);
+            this.Focus.Location = new System.Drawing.Point(4, 25);
+            this.Focus.Margin = new System.Windows.Forms.Padding(4);
             this.Focus.Name = "Focus";
-            this.Focus.Padding = new System.Windows.Forms.Padding(3);
-            this.Focus.Size = new System.Drawing.Size(760, 640);
+            this.Focus.Padding = new System.Windows.Forms.Padding(4);
+            this.Focus.Size = new System.Drawing.Size(1459, 1162);
             this.Focus.TabIndex = 2;
             this.Focus.Text = "Focus";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(125, 224);
+            this.button4.Location = new System.Drawing.Point(167, 276);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 20);
+            this.button4.Size = new System.Drawing.Size(85, 25);
             this.button4.TabIndex = 7;
             this.button4.Text = "Goto";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(22, 224);
+            this.textBox3.Location = new System.Drawing.Point(29, 276);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(86, 20);
+            this.textBox3.Size = new System.Drawing.Size(113, 22);
             this.textBox3.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.label7.Location = new System.Drawing.Point(22, 183);
+            this.label7.Location = new System.Drawing.Point(29, 225);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 37);
+            this.label7.Size = new System.Drawing.Size(223, 46);
             this.label7.TabIndex = 5;
             this.label7.Text = "Goto Position";
             // 
@@ -276,9 +295,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.label6.Location = new System.Drawing.Point(22, 104);
+            this.label6.Location = new System.Drawing.Point(29, 128);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(207, 37);
+            this.label6.Size = new System.Drawing.Size(261, 46);
             this.label6.TabIndex = 4;
             this.label6.Text = "Current Position";
             // 
@@ -286,18 +306,20 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 20F);
-            this.label5.Location = new System.Drawing.Point(327, 92);
+            this.label5.Location = new System.Drawing.Point(436, 113);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 37);
+            this.label5.Size = new System.Drawing.Size(72, 46);
             this.label5.TabIndex = 3;
             this.label5.Text = "Jog";
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.button3.Location = new System.Drawing.Point(327, 224);
+            this.button3.Location = new System.Drawing.Point(436, 276);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(154, 99);
+            this.button3.Size = new System.Drawing.Size(205, 122);
             this.button3.TabIndex = 2;
             this.button3.Text = "backwards";
             this.button3.UseVisualStyleBackColor = true;
@@ -305,9 +327,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.button2.Location = new System.Drawing.Point(327, 127);
+            this.button2.Location = new System.Drawing.Point(436, 156);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 81);
+            this.button2.Size = new System.Drawing.Size(205, 100);
             this.button2.TabIndex = 1;
             this.button2.Text = "forwards";
             this.button2.UseVisualStyleBackColor = true;
@@ -316,9 +339,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F);
-            this.label4.Location = new System.Drawing.Point(22, 62);
+            this.label4.Location = new System.Drawing.Point(29, 76);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 37);
+            this.label4.Size = new System.Drawing.Size(261, 46);
             this.label4.TabIndex = 0;
             this.label4.Text = "Current Position";
             // 
@@ -328,10 +352,11 @@
             this.Camera.Controls.Add(this.groupBox5);
             this.Camera.Controls.Add(this.groupBox4);
             this.Camera.Controls.Add(this.label9);
-            this.Camera.Location = new System.Drawing.Point(4, 22);
+            this.Camera.Location = new System.Drawing.Point(4, 25);
+            this.Camera.Margin = new System.Windows.Forms.Padding(4);
             this.Camera.Name = "Camera";
-            this.Camera.Padding = new System.Windows.Forms.Padding(3);
-            this.Camera.Size = new System.Drawing.Size(760, 640);
+            this.Camera.Padding = new System.Windows.Forms.Padding(4);
+            this.Camera.Size = new System.Drawing.Size(1459, 1162);
             this.Camera.TabIndex = 1;
             this.Camera.Text = "Camera";
             // 
@@ -339,18 +364,21 @@
             // 
             this.groupBox5.BackColor = System.Drawing.Color.AliceBlue;
             this.groupBox5.Controls.Add(this.pictureBox2);
-            this.groupBox5.Location = new System.Drawing.Point(194, 18);
+            this.groupBox5.Location = new System.Drawing.Point(259, 22);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(560, 551);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(747, 678);
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Camera";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 25);
+            this.pictureBox2.Location = new System.Drawing.Point(8, 31);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(548, 457);
+            this.pictureBox2.Size = new System.Drawing.Size(731, 562);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
@@ -367,103 +395,116 @@
             this.groupBox4.Controls.Add(this.textBox5);
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Location = new System.Drawing.Point(4, 24);
+            this.groupBox4.Location = new System.Drawing.Point(5, 30);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(184, 177);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(245, 218);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Camera Controls";
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(9, 139);
+            this.button13.Location = new System.Drawing.Point(12, 171);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(164, 23);
+            this.button13.Size = new System.Drawing.Size(219, 28);
             this.button13.TabIndex = 14;
             this.button13.Text = "Capture Image";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(6, 113);
+            this.textBox6.Location = new System.Drawing.Point(8, 139);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(86, 20);
+            this.textBox6.Size = new System.Drawing.Size(113, 22);
             this.textBox6.TabIndex = 7;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(98, 35);
+            this.button10.Location = new System.Drawing.Point(131, 43);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.Size = new System.Drawing.Size(100, 28);
             this.button10.TabIndex = 11;
             this.button10.Text = "Set";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(98, 74);
+            this.button11.Location = new System.Drawing.Point(131, 91);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.Size = new System.Drawing.Size(100, 28);
             this.button11.TabIndex = 12;
             this.button11.Text = "Set";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(6, 35);
+            this.textBox4.Location = new System.Drawing.Point(8, 43);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(86, 20);
+            this.textBox4.Size = new System.Drawing.Size(113, 22);
             this.textBox4.TabIndex = 5;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 19);
+            this.label8.Location = new System.Drawing.Point(8, 23);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 13);
+            this.label8.Size = new System.Drawing.Size(80, 16);
             this.label8.TabIndex = 3;
             this.label8.Text = "Binning (1-4)";
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(98, 110);
+            this.button12.Location = new System.Drawing.Point(131, 135);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.Size = new System.Drawing.Size(100, 28);
             this.button12.TabIndex = 13;
             this.button12.Text = "Set";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(6, 74);
+            this.textBox5.Location = new System.Drawing.Point(8, 91);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(86, 20);
+            this.textBox5.Size = new System.Drawing.Size(113, 22);
             this.textBox5.TabIndex = 6;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 58);
+            this.label18.Location = new System.Drawing.Point(8, 71);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(73, 13);
+            this.label18.Size = new System.Drawing.Size(93, 16);
             this.label18.TabIndex = 9;
             this.label18.Text = "Exposure (ms)";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 97);
+            this.label19.Location = new System.Drawing.Point(8, 119);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(29, 13);
+            this.label19.Size = new System.Drawing.Size(35, 16);
             this.label19.TabIndex = 10;
             this.label19.Text = "Gain";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(250, 24);
+            this.label9.Location = new System.Drawing.Point(333, 30);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 13);
+            this.label9.Size = new System.Drawing.Size(90, 16);
             this.label9.TabIndex = 4;
             this.label9.Text = "Current Image";
             // 
@@ -477,12 +518,157 @@
             this.TuningControlBoardTab.Controls.Add(this.TempControlBox);
             this.TuningControlBoardTab.Controls.Add(this.TuningControlPanel);
             this.TuningControlBoardTab.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.TuningControlBoardTab.Location = new System.Drawing.Point(4, 22);
+            this.TuningControlBoardTab.Location = new System.Drawing.Point(4, 25);
+            this.TuningControlBoardTab.Margin = new System.Windows.Forms.Padding(4);
             this.TuningControlBoardTab.Name = "TuningControlBoardTab";
-            this.TuningControlBoardTab.Padding = new System.Windows.Forms.Padding(3);
-            this.TuningControlBoardTab.Size = new System.Drawing.Size(760, 640);
+            this.TuningControlBoardTab.Padding = new System.Windows.Forms.Padding(4);
+            this.TuningControlBoardTab.Size = new System.Drawing.Size(1459, 1162);
             this.TuningControlBoardTab.TabIndex = 0;
             this.TuningControlBoardTab.Text = "Tuning Control Board";
+            // 
+            // VoltageControlBox
+            // 
+            this.VoltageControlBox.BackColor = System.Drawing.Color.Azure;
+            this.VoltageControlBox.Controls.Add(this.Stage3Slider);
+            this.VoltageControlBox.Controls.Add(this.Stage2Slider);
+            this.VoltageControlBox.Controls.Add(this.Stage1Slider);
+            this.VoltageControlBox.Controls.Add(this.Stage3VoltageNumeric);
+            this.VoltageControlBox.Controls.Add(this.Stage2VoltageNumeric);
+            this.VoltageControlBox.Controls.Add(this.Stage1VoltageNumeric);
+            this.VoltageControlBox.Controls.Add(this.labelStage3);
+            this.VoltageControlBox.Controls.Add(this.labelStage2);
+            this.VoltageControlBox.Controls.Add(this.labelStage1);
+            this.VoltageControlBox.Location = new System.Drawing.Point(7, 418);
+            this.VoltageControlBox.Margin = new System.Windows.Forms.Padding(4);
+            this.VoltageControlBox.Name = "VoltageControlBox";
+            this.VoltageControlBox.Padding = new System.Windows.Forms.Padding(4);
+            this.VoltageControlBox.Size = new System.Drawing.Size(1428, 290);
+            this.VoltageControlBox.TabIndex = 14;
+            this.VoltageControlBox.TabStop = false;
+            this.VoltageControlBox.Text = "Voltage Slider";
+            // 
+            // Stage3Slider
+            // 
+            this.Stage3Slider.Location = new System.Drawing.Point(160, 224);
+            this.Stage3Slider.Margin = new System.Windows.Forms.Padding(4);
+            this.Stage3Slider.Maximum = 1800;
+            this.Stage3Slider.Name = "Stage3Slider";
+            this.Stage3Slider.Size = new System.Drawing.Size(1249, 56);
+            this.Stage3Slider.TabIndex = 22;
+            this.Stage3Slider.TickFrequency = 200;
+            this.Stage3Slider.Scroll += new System.EventHandler(this.Stage3Slider_Scroll);
+            // 
+            // Stage2Slider
+            // 
+            this.Stage2Slider.Location = new System.Drawing.Point(160, 151);
+            this.Stage2Slider.Margin = new System.Windows.Forms.Padding(4);
+            this.Stage2Slider.Maximum = 1800;
+            this.Stage2Slider.Name = "Stage2Slider";
+            this.Stage2Slider.Size = new System.Drawing.Size(1249, 56);
+            this.Stage2Slider.TabIndex = 21;
+            this.Stage2Slider.TickFrequency = 200;
+            this.Stage2Slider.Scroll += new System.EventHandler(this.Stage2Slider_Scroll);
+            // 
+            // Stage1Slider
+            // 
+            this.Stage1Slider.Location = new System.Drawing.Point(160, 65);
+            this.Stage1Slider.Margin = new System.Windows.Forms.Padding(4);
+            this.Stage1Slider.Maximum = 1800;
+            this.Stage1Slider.Name = "Stage1Slider";
+            this.Stage1Slider.Size = new System.Drawing.Size(1249, 56);
+            this.Stage1Slider.TabIndex = 20;
+            this.Stage1Slider.TickFrequency = 200;
+            this.Stage1Slider.Scroll += new System.EventHandler(this.Stage1Slider_Scroll);
+            // 
+            // Stage3VoltageNumeric
+            // 
+            this.Stage3VoltageNumeric.DecimalPlaces = 2;
+            this.Stage3VoltageNumeric.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.Stage3VoltageNumeric.Location = new System.Drawing.Point(17, 224);
+            this.Stage3VoltageNumeric.Margin = new System.Windows.Forms.Padding(4);
+            this.Stage3VoltageNumeric.Maximum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.Stage3VoltageNumeric.Name = "Stage3VoltageNumeric";
+            this.Stage3VoltageNumeric.Size = new System.Drawing.Size(80, 25);
+            this.Stage3VoltageNumeric.TabIndex = 25;
+            this.Stage3VoltageNumeric.ValueChanged += new System.EventHandler(this.Stage3VoltageNumeric_ValueChanged);
+            // 
+            // Stage2VoltageNumeric
+            // 
+            this.Stage2VoltageNumeric.DecimalPlaces = 2;
+            this.Stage2VoltageNumeric.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.Stage2VoltageNumeric.Location = new System.Drawing.Point(17, 151);
+            this.Stage2VoltageNumeric.Margin = new System.Windows.Forms.Padding(4);
+            this.Stage2VoltageNumeric.Maximum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.Stage2VoltageNumeric.Name = "Stage2VoltageNumeric";
+            this.Stage2VoltageNumeric.Size = new System.Drawing.Size(80, 25);
+            this.Stage2VoltageNumeric.TabIndex = 24;
+            this.Stage2VoltageNumeric.ValueChanged += new System.EventHandler(this.Stage2VoltageNumeric_ValueChanged);
+            // 
+            // Stage1VoltageNumeric
+            // 
+            this.Stage1VoltageNumeric.DecimalPlaces = 2;
+            this.Stage1VoltageNumeric.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.Stage1VoltageNumeric.Location = new System.Drawing.Point(17, 65);
+            this.Stage1VoltageNumeric.Margin = new System.Windows.Forms.Padding(4);
+            this.Stage1VoltageNumeric.Maximum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.Stage1VoltageNumeric.Name = "Stage1VoltageNumeric";
+            this.Stage1VoltageNumeric.Size = new System.Drawing.Size(80, 25);
+            this.Stage1VoltageNumeric.TabIndex = 23;
+            this.Stage1VoltageNumeric.ValueChanged += new System.EventHandler(this.Stage1VoltageNumeric_ValueChanged);
+            // 
+            // labelStage3
+            // 
+            this.labelStage3.AutoSize = true;
+            this.labelStage3.Location = new System.Drawing.Point(13, 201);
+            this.labelStage3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelStage3.Name = "labelStage3";
+            this.labelStage3.Size = new System.Drawing.Size(115, 19);
+            this.labelStage3.TabIndex = 28;
+            this.labelStage3.Text = "S3 10.8mm (Vpp)";
+            // 
+            // labelStage2
+            // 
+            this.labelStage2.AutoSize = true;
+            this.labelStage2.Location = new System.Drawing.Point(13, 128);
+            this.labelStage2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelStage2.Name = "labelStage2";
+            this.labelStage2.Size = new System.Drawing.Size(107, 19);
+            this.labelStage2.TabIndex = 27;
+            this.labelStage2.Text = "S2 5.4mm (Vpp)";
+            // 
+            // labelStage1
+            // 
+            this.labelStage1.AutoSize = true;
+            this.labelStage1.Location = new System.Drawing.Point(13, 42);
+            this.labelStage1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelStage1.Name = "labelStage1";
+            this.labelStage1.Size = new System.Drawing.Size(107, 19);
+            this.labelStage1.TabIndex = 26;
+            this.labelStage1.Text = "S1 2.7mm (Vpp)";
             // 
             // groupBox2
             // 
@@ -495,9 +681,11 @@
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.IntercepttextBox);
             this.groupBox2.Controls.Add(this.SlopetextBox8);
-            this.groupBox2.Location = new System.Drawing.Point(474, 202);
+            this.groupBox2.Location = new System.Drawing.Point(632, 249);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(283, 131);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(377, 161);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Slope-Intercept";
@@ -505,9 +693,10 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 18);
+            this.label17.Location = new System.Drawing.Point(8, 22);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(221, 13);
+            this.label17.Size = new System.Drawing.Size(262, 19);
             this.label17.TabIndex = 7;
             this.label17.Text = "Scott, Ignore this panel it will be removed";
             this.label17.Click += new System.EventHandler(this.label17_Click);
@@ -515,35 +704,39 @@
             // SlopeInterceptEquationLabel
             // 
             this.SlopeInterceptEquationLabel.AutoSize = true;
-            this.SlopeInterceptEquationLabel.Location = new System.Drawing.Point(122, 1);
+            this.SlopeInterceptEquationLabel.Location = new System.Drawing.Point(163, 1);
+            this.SlopeInterceptEquationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SlopeInterceptEquationLabel.Name = "SlopeInterceptEquationLabel";
-            this.SlopeInterceptEquationLabel.Size = new System.Drawing.Size(103, 13);
+            this.SlopeInterceptEquationLabel.Size = new System.Drawing.Size(134, 19);
             this.SlopeInterceptEquationLabel.TabIndex = 6;
             this.SlopeInterceptEquationLabel.Text = "y=(0.04)x+(-655.27)";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(7, 87);
+            this.label15.Location = new System.Drawing.Point(9, 107);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 13);
+            this.label15.Size = new System.Drawing.Size(64, 19);
             this.label15.TabIndex = 5;
             this.label15.Text = "Intercept";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 38);
+            this.label14.Location = new System.Drawing.Point(9, 47);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(39, 13);
+            this.label14.Size = new System.Drawing.Size(45, 19);
             this.label14.TabIndex = 4;
             this.label14.Text = "Slope:";
             // 
             // InterceptSetbutton
             // 
-            this.InterceptSetbutton.Location = new System.Drawing.Point(113, 103);
+            this.InterceptSetbutton.Location = new System.Drawing.Point(151, 127);
+            this.InterceptSetbutton.Margin = new System.Windows.Forms.Padding(4);
             this.InterceptSetbutton.Name = "InterceptSetbutton";
-            this.InterceptSetbutton.Size = new System.Drawing.Size(75, 23);
+            this.InterceptSetbutton.Size = new System.Drawing.Size(100, 28);
             this.InterceptSetbutton.TabIndex = 3;
             this.InterceptSetbutton.Text = "Set";
             this.InterceptSetbutton.UseVisualStyleBackColor = true;
@@ -551,9 +744,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(113, 56);
+            this.button5.Location = new System.Drawing.Point(151, 69);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 28);
             this.button5.TabIndex = 2;
             this.button5.Text = "Set";
             this.button5.UseVisualStyleBackColor = true;
@@ -561,16 +755,18 @@
             // 
             // IntercepttextBox
             // 
-            this.IntercepttextBox.Location = new System.Drawing.Point(7, 103);
+            this.IntercepttextBox.Location = new System.Drawing.Point(9, 127);
+            this.IntercepttextBox.Margin = new System.Windows.Forms.Padding(4);
             this.IntercepttextBox.Name = "IntercepttextBox";
-            this.IntercepttextBox.Size = new System.Drawing.Size(100, 22);
+            this.IntercepttextBox.Size = new System.Drawing.Size(132, 25);
             this.IntercepttextBox.TabIndex = 1;
             // 
             // SlopetextBox8
             // 
-            this.SlopetextBox8.Location = new System.Drawing.Point(7, 56);
+            this.SlopetextBox8.Location = new System.Drawing.Point(9, 69);
+            this.SlopetextBox8.Margin = new System.Windows.Forms.Padding(4);
             this.SlopetextBox8.Name = "SlopetextBox8";
-            this.SlopetextBox8.Size = new System.Drawing.Size(100, 22);
+            this.SlopetextBox8.Size = new System.Drawing.Size(132, 25);
             this.SlopetextBox8.TabIndex = 0;
             // 
             // groupBox1
@@ -580,18 +776,21 @@
             this.groupBox1.Controls.Add(this.PortSelector);
             this.groupBox1.Controls.Add(this.button9);
             this.groupBox1.Controls.Add(this.ComStatus);
-            this.groupBox1.Location = new System.Drawing.Point(473, 5);
+            this.groupBox1.Location = new System.Drawing.Point(631, 6);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(284, 192);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(379, 236);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COM ports";
             // 
             // RefreshCom
             // 
-            this.RefreshCom.Location = new System.Drawing.Point(193, 90);
+            this.RefreshCom.Location = new System.Drawing.Point(257, 111);
+            this.RefreshCom.Margin = new System.Windows.Forms.Padding(4);
             this.RefreshCom.Name = "RefreshCom";
-            this.RefreshCom.Size = new System.Drawing.Size(79, 38);
+            this.RefreshCom.Size = new System.Drawing.Size(105, 47);
             this.RefreshCom.TabIndex = 12;
             this.RefreshCom.Text = "Refresh";
             this.RefreshCom.UseVisualStyleBackColor = true;
@@ -600,16 +799,18 @@
             // PortSelector
             // 
             this.PortSelector.FormattingEnabled = true;
-            this.PortSelector.Location = new System.Drawing.Point(8, 19);
+            this.PortSelector.Location = new System.Drawing.Point(11, 23);
+            this.PortSelector.Margin = new System.Windows.Forms.Padding(4);
             this.PortSelector.Name = "PortSelector";
-            this.PortSelector.Size = new System.Drawing.Size(264, 21);
+            this.PortSelector.Size = new System.Drawing.Size(351, 25);
             this.PortSelector.TabIndex = 8;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(193, 46);
+            this.button9.Location = new System.Drawing.Point(257, 57);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(79, 38);
+            this.button9.Size = new System.Drawing.Size(105, 47);
             this.button9.TabIndex = 10;
             this.button9.Text = "Connect";
             this.button9.UseVisualStyleBackColor = true;
@@ -618,9 +819,10 @@
             // ComStatus
             // 
             this.ComStatus.AutoSize = true;
-            this.ComStatus.Location = new System.Drawing.Point(5, 62);
+            this.ComStatus.Location = new System.Drawing.Point(7, 76);
+            this.ComStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ComStatus.Name = "ComStatus";
-            this.ComStatus.Size = new System.Drawing.Size(123, 13);
+            this.ComStatus.Size = new System.Drawing.Size(147, 19);
             this.ComStatus.TabIndex = 11;
             this.ComStatus.Text = "Status: Not Connected";
             // 
@@ -629,9 +831,11 @@
             this.HeaterData.BackColor = System.Drawing.Color.Azure;
             this.HeaterData.Controls.Add(this.CompensatorDataGrid);
             this.HeaterData.Controls.Add(this.HeaterDataGrid);
-            this.HeaterData.Location = new System.Drawing.Point(7, 338);
+            this.HeaterData.Location = new System.Drawing.Point(7, 716);
+            this.HeaterData.Margin = new System.Windows.Forms.Padding(4);
             this.HeaterData.Name = "HeaterData";
-            this.HeaterData.Size = new System.Drawing.Size(750, 296);
+            this.HeaterData.Padding = new System.Windows.Forms.Padding(4);
+            this.HeaterData.Size = new System.Drawing.Size(1428, 438);
             this.HeaterData.TabIndex = 7;
             this.HeaterData.TabStop = false;
             this.HeaterData.Text = "House Keeping";
@@ -645,36 +849,48 @@
             this.VoltageCol,
             this.StageSizeCol,
             this.TuningCol});
-            this.CompensatorDataGrid.Location = new System.Drawing.Point(5, 160);
+            this.CompensatorDataGrid.Location = new System.Drawing.Point(8, 270);
+            this.CompensatorDataGrid.Margin = new System.Windows.Forms.Padding(4);
             this.CompensatorDataGrid.Name = "CompensatorDataGrid";
+            this.CompensatorDataGrid.RowHeadersWidth = 51;
             this.CompensatorDataGrid.RowTemplate.Height = 25;
-            this.CompensatorDataGrid.Size = new System.Drawing.Size(545, 130);
+            this.CompensatorDataGrid.Size = new System.Drawing.Size(1401, 160);
             this.CompensatorDataGrid.TabIndex = 1;
             // 
             // StageLabelCol
             // 
             this.StageLabelCol.HeaderText = "Stage Label";
+            this.StageLabelCol.MinimumWidth = 6;
             this.StageLabelCol.Name = "StageLabelCol";
+            this.StageLabelCol.Width = 125;
             // 
             // WavelengthCol
             // 
             this.WavelengthCol.HeaderText = "Wavelength (nm)";
+            this.WavelengthCol.MinimumWidth = 6;
             this.WavelengthCol.Name = "WavelengthCol";
+            this.WavelengthCol.Width = 125;
             // 
             // VoltageCol
             // 
             this.VoltageCol.HeaderText = "Voltage (V)";
+            this.VoltageCol.MinimumWidth = 6;
             this.VoltageCol.Name = "VoltageCol";
+            this.VoltageCol.Width = 125;
             // 
             // StageSizeCol
             // 
             this.StageSizeCol.HeaderText = "Stage Size (mm)";
+            this.StageSizeCol.MinimumWidth = 6;
             this.StageSizeCol.Name = "StageSizeCol";
+            this.StageSizeCol.Width = 125;
             // 
             // TuningCol
             // 
             this.TuningCol.HeaderText = "Tuning";
+            this.TuningCol.MinimumWidth = 6;
             this.TuningCol.Name = "TuningCol";
+            this.TuningCol.Width = 125;
             // 
             // HeaterDataGrid
             // 
@@ -688,51 +904,69 @@
             this.SetPointColumn,
             this.HeaterStatusColumn,
             this.CurrentColumn});
-            this.HeaterDataGrid.Location = new System.Drawing.Point(5, 18);
+            this.HeaterDataGrid.Location = new System.Drawing.Point(7, 45);
+            this.HeaterDataGrid.Margin = new System.Windows.Forms.Padding(4);
             this.HeaterDataGrid.Name = "HeaterDataGrid";
+            this.HeaterDataGrid.RowHeadersWidth = 51;
             this.HeaterDataGrid.RowTemplate.Height = 25;
-            this.HeaterDataGrid.Size = new System.Drawing.Size(739, 136);
+            this.HeaterDataGrid.Size = new System.Drawing.Size(1402, 200);
             this.HeaterDataGrid.TabIndex = 0;
             // 
             // HeaterLabelColumn
             // 
             this.HeaterLabelColumn.HeaderText = "Heater Zone";
+            this.HeaterLabelColumn.MinimumWidth = 6;
             this.HeaterLabelColumn.Name = "HeaterLabelColumn";
+            this.HeaterLabelColumn.Width = 125;
             // 
             // KpColumn
             // 
             this.KpColumn.HeaderText = "Kp";
+            this.KpColumn.MinimumWidth = 6;
             this.KpColumn.Name = "KpColumn";
+            this.KpColumn.Width = 125;
             // 
             // KiColumn
             // 
             this.KiColumn.HeaderText = "Ki";
+            this.KiColumn.MinimumWidth = 6;
             this.KiColumn.Name = "KiColumn";
+            this.KiColumn.Width = 125;
             // 
             // KdColumn
             // 
             this.KdColumn.HeaderText = "Kd";
+            this.KdColumn.MinimumWidth = 6;
             this.KdColumn.Name = "KdColumn";
+            this.KdColumn.Width = 125;
             // 
             // AverageTempColumn
             // 
             this.AverageTempColumn.HeaderText = "AvgTemp 2 Sec (C)";
+            this.AverageTempColumn.MinimumWidth = 6;
             this.AverageTempColumn.Name = "AverageTempColumn";
+            this.AverageTempColumn.Width = 125;
             // 
             // SetPointColumn
             // 
             this.SetPointColumn.HeaderText = "Set Point (C)";
+            this.SetPointColumn.MinimumWidth = 6;
             this.SetPointColumn.Name = "SetPointColumn";
+            this.SetPointColumn.Width = 125;
             // 
             // HeaterStatusColumn
             // 
             this.HeaterStatusColumn.HeaderText = "HeaterStatus";
+            this.HeaterStatusColumn.MinimumWidth = 6;
             this.HeaterStatusColumn.Name = "HeaterStatusColumn";
+            this.HeaterStatusColumn.Width = 125;
             // 
             // CurrentColumn
             // 
             this.CurrentColumn.HeaderText = "Current";
+            this.CurrentColumn.MinimumWidth = 6;
             this.CurrentColumn.Name = "CurrentColumn";
+            this.CurrentColumn.Width = 125;
             // 
             // TempControlBox
             // 
@@ -742,18 +976,21 @@
             this.TempControlBox.Controls.Add(this.PIDSettingBox);
             this.TempControlBox.Controls.Add(this.label12);
             this.TempControlBox.Controls.Add(this.TempSetBox);
-            this.TempControlBox.Location = new System.Drawing.Point(231, 5);
+            this.TempControlBox.Location = new System.Drawing.Point(308, 6);
+            this.TempControlBox.Margin = new System.Windows.Forms.Padding(4);
             this.TempControlBox.Name = "TempControlBox";
-            this.TempControlBox.Size = new System.Drawing.Size(237, 328);
+            this.TempControlBox.Padding = new System.Windows.Forms.Padding(4);
+            this.TempControlBox.Size = new System.Drawing.Size(316, 404);
             this.TempControlBox.TabIndex = 6;
             this.TempControlBox.TabStop = false;
             this.TempControlBox.Text = "Temperature Control";
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(10, 68);
+            this.button6.Location = new System.Drawing.Point(13, 84);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(84, 25);
+            this.button6.Size = new System.Drawing.Size(112, 31);
             this.button6.TabIndex = 13;
             this.button6.Text = "Heater On";
             this.button6.UseVisualStyleBackColor = true;
@@ -761,9 +998,10 @@
             // 
             // TempSetButton
             // 
-            this.TempSetButton.Location = new System.Drawing.Point(99, 38);
+            this.TempSetButton.Location = new System.Drawing.Point(132, 47);
+            this.TempSetButton.Margin = new System.Windows.Forms.Padding(4);
             this.TempSetButton.Name = "TempSetButton";
-            this.TempSetButton.Size = new System.Drawing.Size(84, 25);
+            this.TempSetButton.Size = new System.Drawing.Size(112, 31);
             this.TempSetButton.TabIndex = 11;
             this.TempSetButton.Text = "Set";
             this.TempSetButton.UseVisualStyleBackColor = true;
@@ -777,9 +1015,11 @@
             this.PIDSettingBox.Controls.Add(this.PIDSetField);
             this.PIDSettingBox.Controls.Add(this.HeaterRadioBox);
             this.PIDSettingBox.Controls.Add(this.PIDRadioBox);
-            this.PIDSettingBox.Location = new System.Drawing.Point(5, 122);
+            this.PIDSettingBox.Location = new System.Drawing.Point(7, 150);
+            this.PIDSettingBox.Margin = new System.Windows.Forms.Padding(4);
             this.PIDSettingBox.Name = "PIDSettingBox";
-            this.PIDSettingBox.Size = new System.Drawing.Size(225, 200);
+            this.PIDSettingBox.Padding = new System.Windows.Forms.Padding(4);
+            this.PIDSettingBox.Size = new System.Drawing.Size(300, 246);
             this.PIDSettingBox.TabIndex = 4;
             this.PIDSettingBox.TabStop = false;
             this.PIDSettingBox.Text = "PID Settings";
@@ -788,16 +1028,18 @@
             // 
             this.label10.AllowDrop = true;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 187);
+            this.label10.Location = new System.Drawing.Point(12, 230);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.Size = new System.Drawing.Size(0, 19);
             this.label10.TabIndex = 11;
             // 
             // PIDSetButton
             // 
-            this.PIDSetButton.Location = new System.Drawing.Point(99, 159);
+            this.PIDSetButton.Location = new System.Drawing.Point(132, 196);
+            this.PIDSetButton.Margin = new System.Windows.Forms.Padding(4);
             this.PIDSetButton.Name = "PIDSetButton";
-            this.PIDSetButton.Size = new System.Drawing.Size(84, 25);
+            this.PIDSetButton.Size = new System.Drawing.Size(112, 31);
             this.PIDSetButton.TabIndex = 10;
             this.PIDSetButton.Text = "Set";
             this.PIDSetButton.UseVisualStyleBackColor = true;
@@ -806,17 +1048,19 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(0, 143);
+            this.label13.Location = new System.Drawing.Point(0, 176);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 13);
+            this.label13.Size = new System.Drawing.Size(42, 19);
             this.label13.TabIndex = 9;
             this.label13.Text = "Value";
             // 
             // PIDSetField
             // 
-            this.PIDSetField.Location = new System.Drawing.Point(4, 159);
+            this.PIDSetField.Location = new System.Drawing.Point(5, 196);
+            this.PIDSetField.Margin = new System.Windows.Forms.Padding(4);
             this.PIDSetField.Name = "PIDSetField";
-            this.PIDSetField.Size = new System.Drawing.Size(86, 22);
+            this.PIDSetField.Size = new System.Drawing.Size(113, 25);
             this.PIDSetField.TabIndex = 8;
             // 
             // HeaterRadioBox
@@ -824,9 +1068,11 @@
             this.HeaterRadioBox.Controls.Add(this.Heater3checkBox);
             this.HeaterRadioBox.Controls.Add(this.Heater2checkBox);
             this.HeaterRadioBox.Controls.Add(this.Heater1checkBox);
-            this.HeaterRadioBox.Location = new System.Drawing.Point(123, 24);
+            this.HeaterRadioBox.Location = new System.Drawing.Point(164, 30);
+            this.HeaterRadioBox.Margin = new System.Windows.Forms.Padding(4);
             this.HeaterRadioBox.Name = "HeaterRadioBox";
-            this.HeaterRadioBox.Size = new System.Drawing.Size(92, 112);
+            this.HeaterRadioBox.Padding = new System.Windows.Forms.Padding(4);
+            this.HeaterRadioBox.Size = new System.Drawing.Size(123, 138);
             this.HeaterRadioBox.TabIndex = 7;
             this.HeaterRadioBox.TabStop = false;
             this.HeaterRadioBox.Text = "Heater Zones";
@@ -834,9 +1080,10 @@
             // Heater3checkBox
             // 
             this.Heater3checkBox.AutoSize = true;
-            this.Heater3checkBox.Location = new System.Drawing.Point(6, 78);
+            this.Heater3checkBox.Location = new System.Drawing.Point(8, 96);
+            this.Heater3checkBox.Margin = new System.Windows.Forms.Padding(4);
             this.Heater3checkBox.Name = "Heater3checkBox";
-            this.Heater3checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater3checkBox.Size = new System.Drawing.Size(49, 23);
             this.Heater3checkBox.TabIndex = 2;
             this.Heater3checkBox.Text = "H3";
             this.Heater3checkBox.UseVisualStyleBackColor = true;
@@ -844,9 +1091,10 @@
             // Heater2checkBox
             // 
             this.Heater2checkBox.AutoSize = true;
-            this.Heater2checkBox.Location = new System.Drawing.Point(6, 51);
+            this.Heater2checkBox.Location = new System.Drawing.Point(8, 63);
+            this.Heater2checkBox.Margin = new System.Windows.Forms.Padding(4);
             this.Heater2checkBox.Name = "Heater2checkBox";
-            this.Heater2checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater2checkBox.Size = new System.Drawing.Size(49, 23);
             this.Heater2checkBox.TabIndex = 1;
             this.Heater2checkBox.Text = "H2";
             this.Heater2checkBox.UseVisualStyleBackColor = true;
@@ -854,9 +1102,10 @@
             // Heater1checkBox
             // 
             this.Heater1checkBox.AutoSize = true;
-            this.Heater1checkBox.Location = new System.Drawing.Point(6, 24);
+            this.Heater1checkBox.Location = new System.Drawing.Point(8, 30);
+            this.Heater1checkBox.Margin = new System.Windows.Forms.Padding(4);
             this.Heater1checkBox.Name = "Heater1checkBox";
-            this.Heater1checkBox.Size = new System.Drawing.Size(40, 17);
+            this.Heater1checkBox.Size = new System.Drawing.Size(49, 23);
             this.Heater1checkBox.TabIndex = 0;
             this.Heater1checkBox.Text = "H1";
             this.Heater1checkBox.UseVisualStyleBackColor = true;
@@ -867,9 +1116,11 @@
             this.PIDRadioBox.Controls.Add(this.ProportionalRadio);
             this.PIDRadioBox.Controls.Add(this.DerivativeRadio);
             this.PIDRadioBox.Controls.Add(this.IntegralRadio);
-            this.PIDRadioBox.Location = new System.Drawing.Point(5, 24);
+            this.PIDRadioBox.Location = new System.Drawing.Point(7, 30);
+            this.PIDRadioBox.Margin = new System.Windows.Forms.Padding(4);
             this.PIDRadioBox.Name = "PIDRadioBox";
-            this.PIDRadioBox.Size = new System.Drawing.Size(113, 112);
+            this.PIDRadioBox.Padding = new System.Windows.Forms.Padding(4);
+            this.PIDRadioBox.Size = new System.Drawing.Size(151, 138);
             this.PIDRadioBox.TabIndex = 6;
             this.PIDRadioBox.TabStop = false;
             this.PIDRadioBox.Text = "Terms";
@@ -877,9 +1128,10 @@
             // ProportionalRadio
             // 
             this.ProportionalRadio.AutoSize = true;
-            this.ProportionalRadio.Location = new System.Drawing.Point(5, 24);
+            this.ProportionalRadio.Location = new System.Drawing.Point(7, 30);
+            this.ProportionalRadio.Margin = new System.Windows.Forms.Padding(4);
             this.ProportionalRadio.Name = "ProportionalRadio";
-            this.ProportionalRadio.Size = new System.Drawing.Size(90, 17);
+            this.ProportionalRadio.Size = new System.Drawing.Size(106, 23);
             this.ProportionalRadio.TabIndex = 3;
             this.ProportionalRadio.TabStop = true;
             this.ProportionalRadio.Text = "Proportional";
@@ -888,9 +1140,10 @@
             // DerivativeRadio
             // 
             this.DerivativeRadio.AutoSize = true;
-            this.DerivativeRadio.Location = new System.Drawing.Point(5, 78);
+            this.DerivativeRadio.Location = new System.Drawing.Point(7, 96);
+            this.DerivativeRadio.Margin = new System.Windows.Forms.Padding(4);
             this.DerivativeRadio.Name = "DerivativeRadio";
-            this.DerivativeRadio.Size = new System.Drawing.Size(75, 17);
+            this.DerivativeRadio.Size = new System.Drawing.Size(91, 23);
             this.DerivativeRadio.TabIndex = 5;
             this.DerivativeRadio.TabStop = true;
             this.DerivativeRadio.Text = "Derivative";
@@ -899,9 +1152,10 @@
             // IntegralRadio
             // 
             this.IntegralRadio.AutoSize = true;
-            this.IntegralRadio.Location = new System.Drawing.Point(5, 51);
+            this.IntegralRadio.Location = new System.Drawing.Point(7, 63);
+            this.IntegralRadio.Margin = new System.Windows.Forms.Padding(4);
             this.IntegralRadio.Name = "IntegralRadio";
-            this.IntegralRadio.Size = new System.Drawing.Size(65, 17);
+            this.IntegralRadio.Size = new System.Drawing.Size(77, 23);
             this.IntegralRadio.TabIndex = 4;
             this.IntegralRadio.TabStop = true;
             this.IntegralRadio.Text = "Integral";
@@ -910,17 +1164,19 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 22);
+            this.label12.Location = new System.Drawing.Point(7, 27);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 13);
+            this.label12.Size = new System.Drawing.Size(162, 19);
             this.label12.TabIndex = 1;
             this.label12.Text = "Temperature Setpoint (C)";
             // 
             // TempSetBox
             // 
-            this.TempSetBox.Location = new System.Drawing.Point(9, 42);
+            this.TempSetBox.Location = new System.Drawing.Point(12, 52);
+            this.TempSetBox.Margin = new System.Windows.Forms.Padding(4);
             this.TempSetBox.Name = "TempSetBox";
-            this.TempSetBox.Size = new System.Drawing.Size(86, 22);
+            this.TempSetBox.Size = new System.Drawing.Size(113, 25);
             this.TempSetBox.TabIndex = 0;
             // 
             // TuningControlPanel
@@ -930,18 +1186,21 @@
             this.TuningControlPanel.Controls.Add(this.WavelengthSet);
             this.TuningControlPanel.Controls.Add(this.label11);
             this.TuningControlPanel.Controls.Add(this.WavelengthInput);
-            this.TuningControlPanel.Location = new System.Drawing.Point(7, 5);
+            this.TuningControlPanel.Location = new System.Drawing.Point(9, 6);
+            this.TuningControlPanel.Margin = new System.Windows.Forms.Padding(4);
             this.TuningControlPanel.Name = "TuningControlPanel";
-            this.TuningControlPanel.Size = new System.Drawing.Size(219, 111);
+            this.TuningControlPanel.Padding = new System.Windows.Forms.Padding(4);
+            this.TuningControlPanel.Size = new System.Drawing.Size(292, 137);
             this.TuningControlPanel.TabIndex = 5;
             this.TuningControlPanel.TabStop = false;
             this.TuningControlPanel.Text = "Wavelength Tuning";
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(5, 68);
+            this.button8.Location = new System.Drawing.Point(7, 84);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(126, 25);
+            this.button8.Size = new System.Drawing.Size(168, 31);
             this.button8.TabIndex = 8;
             this.button8.Text = "Tuning On";
             this.button8.UseVisualStyleBackColor = true;
@@ -949,9 +1208,10 @@
             // 
             // WavelengthSet
             // 
-            this.WavelengthSet.Location = new System.Drawing.Point(123, 38);
+            this.WavelengthSet.Location = new System.Drawing.Point(164, 47);
+            this.WavelengthSet.Margin = new System.Windows.Forms.Padding(4);
             this.WavelengthSet.Name = "WavelengthSet";
-            this.WavelengthSet.Size = new System.Drawing.Size(75, 25);
+            this.WavelengthSet.Size = new System.Drawing.Size(100, 31);
             this.WavelengthSet.TabIndex = 7;
             this.WavelengthSet.Text = "Set";
             this.WavelengthSet.UseVisualStyleBackColor = true;
@@ -960,17 +1220,19 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(5, 22);
+            this.label11.Location = new System.Drawing.Point(7, 27);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 13);
+            this.label11.Size = new System.Drawing.Size(113, 19);
             this.label11.TabIndex = 6;
             this.label11.Text = "Wavelength (nm)";
             // 
             // WavelengthInput
             // 
-            this.WavelengthInput.Location = new System.Drawing.Point(5, 42);
+            this.WavelengthInput.Location = new System.Drawing.Point(7, 52);
+            this.WavelengthInput.Margin = new System.Windows.Forms.Padding(4);
             this.WavelengthInput.Name = "WavelengthInput";
-            this.WavelengthInput.Size = new System.Drawing.Size(113, 22);
+            this.WavelengthInput.Size = new System.Drawing.Size(149, 25);
             this.WavelengthInput.TabIndex = 5;
             // 
             // tabControl1
@@ -980,114 +1242,34 @@
             this.tabControl1.Controls.Add(this.Focus);
             this.tabControl1.Controls.Add(this.Instrument);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(768, 666);
+            this.tabControl1.Size = new System.Drawing.Size(1467, 1191);
             this.tabControl1.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // VoltageControlBox
-            // 
-            this.VoltageControlBox.BackColor = System.Drawing.Color.Azure;
-            this.VoltageControlBox.Controls.Add(this.VoltageSetButton);
-            this.VoltageControlBox.Controls.Add(this.label16);
-            this.VoltageControlBox.Controls.Add(this.StagesSelectorBox);
-            this.VoltageControlBox.Controls.Add(this.VoltageSetBox);
-            this.VoltageControlBox.Location = new System.Drawing.Point(7, 123);
-            this.VoltageControlBox.Name = "VoltageControlBox";
-            this.VoltageControlBox.Size = new System.Drawing.Size(218, 209);
-            this.VoltageControlBox.TabIndex = 14;
-            this.VoltageControlBox.TabStop = false;
-            this.VoltageControlBox.Text = "Voltage Control";
-            // 
-            // VoltageSetBox
-            // 
-            this.VoltageSetBox.Location = new System.Drawing.Point(8, 137);
-            this.VoltageSetBox.Name = "VoltageSetBox";
-            this.VoltageSetBox.Size = new System.Drawing.Size(93, 22);
-            this.VoltageSetBox.TabIndex = 6;
-            // 
-            // StagesSelectorBox
-            // 
-            this.StagesSelectorBox.Controls.Add(this.Stage3CheckBox);
-            this.StagesSelectorBox.Controls.Add(this.Stage2CheckBox);
-            this.StagesSelectorBox.Controls.Add(this.Stage1CheckBox);
-            this.StagesSelectorBox.Location = new System.Drawing.Point(5, 21);
-            this.StagesSelectorBox.Name = "StagesSelectorBox";
-            this.StagesSelectorBox.Size = new System.Drawing.Size(94, 89);
-            this.StagesSelectorBox.TabIndex = 10;
-            this.StagesSelectorBox.TabStop = false;
-            this.StagesSelectorBox.Text = "Stage Selector";
-            // 
-            // Stage3CheckBox
-            // 
-            this.Stage3CheckBox.AutoSize = true;
-            this.Stage3CheckBox.Location = new System.Drawing.Point(6, 68);
-            this.Stage3CheckBox.Name = "Stage3CheckBox";
-            this.Stage3CheckBox.Size = new System.Drawing.Size(38, 17);
-            this.Stage3CheckBox.TabIndex = 2;
-            this.Stage3CheckBox.Text = "S3";
-            this.Stage3CheckBox.UseVisualStyleBackColor = true;
-            this.Stage3CheckBox.CheckedChanged += new System.EventHandler(this.Stage3CheckBox_CheckedChanged);
-            // 
-            // Stage2CheckBox
-            // 
-            this.Stage2CheckBox.AutoSize = true;
-            this.Stage2CheckBox.Location = new System.Drawing.Point(6, 45);
-            this.Stage2CheckBox.Name = "Stage2CheckBox";
-            this.Stage2CheckBox.Size = new System.Drawing.Size(38, 17);
-            this.Stage2CheckBox.TabIndex = 1;
-            this.Stage2CheckBox.Text = "S2";
-            this.Stage2CheckBox.UseVisualStyleBackColor = true;
-            this.Stage2CheckBox.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // Stage1CheckBox
-            // 
-            this.Stage1CheckBox.AutoSize = true;
-            this.Stage1CheckBox.Location = new System.Drawing.Point(6, 24);
-            this.Stage1CheckBox.Name = "Stage1CheckBox";
-            this.Stage1CheckBox.Size = new System.Drawing.Size(38, 17);
-            this.Stage1CheckBox.TabIndex = 0;
-            this.Stage1CheckBox.Text = "S1";
-            this.Stage1CheckBox.UseVisualStyleBackColor = true;
-            this.Stage1CheckBox.CheckedChanged += new System.EventHandler(this.Stage1CheckBox_CheckedChanged);
-            // 
             // contextMenuStrip2
             // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(8, 119);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(82, 13);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Voltage (Vp2p)";
-            // 
-            // VoltageSetButton
-            // 
-            this.VoltageSetButton.Location = new System.Drawing.Point(8, 166);
-            this.VoltageSetButton.Name = "VoltageSetButton";
-            this.VoltageSetButton.Size = new System.Drawing.Size(84, 25);
-            this.VoltageSetButton.TabIndex = 12;
-            this.VoltageSetButton.Text = "Set";
-            this.VoltageSetButton.UseVisualStyleBackColor = true;
-            this.VoltageSetButton.Click += new System.EventHandler(this.VoltageSetButton_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 665);
+            this.ClientSize = new System.Drawing.Size(1500, 1200);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.MinimumSize = new System.Drawing.Size(1200, 1000);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lyot Filter Demonstration Instrument Control Panel";
             this.Instrument.ResumeLayout(false);
             this.Instrument.PerformLayout();
@@ -1101,6 +1283,14 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.TuningControlBoardTab.ResumeLayout(false);
+            this.VoltageControlBox.ResumeLayout(false);
+            this.VoltageControlBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage3Slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage2Slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage1Slider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage3VoltageNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage2VoltageNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Stage1VoltageNumeric)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1119,10 +1309,6 @@
             this.TuningControlPanel.ResumeLayout(false);
             this.TuningControlPanel.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.VoltageControlBox.ResumeLayout(false);
-            this.VoltageControlBox.PerformLayout();
-            this.StagesSelectorBox.ResumeLayout(false);
-            this.StagesSelectorBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1162,7 +1348,6 @@
         private System.Windows.Forms.Button WavelengthSet;
         private System.Windows.Forms.GroupBox HeaterData;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox TempControlBox;
         private System.Windows.Forms.Button TempSetButton;
         private System.Windows.Forms.GroupBox PIDSettingBox;
@@ -1220,13 +1405,15 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox VoltageControlBox;
-        private System.Windows.Forms.GroupBox StagesSelectorBox;
-        private System.Windows.Forms.CheckBox Stage3CheckBox;
-        private System.Windows.Forms.CheckBox Stage2CheckBox;
-        private System.Windows.Forms.CheckBox Stage1CheckBox;
-        private System.Windows.Forms.TextBox VoltageSetBox;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.Button VoltageSetButton;
+        private System.Windows.Forms.TrackBar Stage1Slider;
+        private System.Windows.Forms.TrackBar Stage2Slider;
+        private System.Windows.Forms.TrackBar Stage3Slider;
+        private System.Windows.Forms.NumericUpDown Stage1VoltageNumeric;
+        private System.Windows.Forms.NumericUpDown Stage2VoltageNumeric;
+        private System.Windows.Forms.NumericUpDown Stage3VoltageNumeric;
+        private System.Windows.Forms.Label labelStage1;
+        private System.Windows.Forms.Label labelStage2;
+        private System.Windows.Forms.Label labelStage3;
     }
 }
