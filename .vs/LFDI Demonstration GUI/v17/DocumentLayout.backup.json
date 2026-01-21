@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|solutionrelative:lfdi demonstration gui\\lfdi_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|c:\\users\\iguser\\desktop\\lfdi_gui\\lfdi demonstration gui\\lfdi_gui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|solutionrelative:lfdi demonstration gui\\lfdi_gui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|c:\\users\\iguser\\desktop\\lfdi_gui\\lfdi demonstration gui\\lfdi_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|solutionrelative:lfdi demonstration gui\\lfdi_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|c:\\users\\iguser\\desktop\\lfdi_gui\\lfdi demonstration gui\\lfdi demonstration gui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}",
       "RelativeMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|solutionrelative:lfdi demonstration gui\\lfdi demonstration gui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|c:\\users\\iguser\\desktop\\lfdi_gui\\lfdi demonstration gui\\lfdi_gui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|solutionrelative:lfdi demonstration gui\\lfdi_gui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5ADF4F90-CADA-44B9-A419-BC96036A37D9}|LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj|C:\\Users\\iguser\\Desktop\\LFDI_GUI\\lfdi demonstration gui\\lfdi_gui.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 255,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,8 +73,12 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LFDI Demonstration GUI",
               "DocumentMoniker": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
               "RelativeDocumentMoniker": "LFDI Demonstration GUI\\LFDI Demonstration GUI.csproj",
@@ -85,26 +89,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LFDI_GUI.cs",
               "DocumentMoniker": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI_GUI.cs",
               "RelativeDocumentMoniker": "LFDI Demonstration GUI\\LFDI_GUI.cs",
               "ToolTip": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI_GUI.cs",
               "RelativeToolTip": "LFDI Demonstration GUI\\LFDI_GUI.cs",
-              "ViewState": "AgIAAKgBAAAAAAAAAAAgwL0BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMwBAAAAAAAAAAAswMkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T01:54:53.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "LFDI_GUI.Designer.cs",
               "DocumentMoniker": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI_GUI.Designer.cs",
               "RelativeDocumentMoniker": "LFDI Demonstration GUI\\LFDI_GUI.Designer.cs",
               "ToolTip": "C:\\Users\\iguser\\Desktop\\LFDI_GUI\\LFDI Demonstration GUI\\LFDI_GUI.Designer.cs",
               "RelativeToolTip": "LFDI Demonstration GUI\\LFDI_GUI.Designer.cs",
-              "ViewState": "AgIAALEEAAAAAAAAAAAIwMMEAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwFAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T01:54:53.291Z",
               "EditorCaption": ""
@@ -120,10 +124,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T01:54:55.997Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",

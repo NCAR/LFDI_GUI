@@ -31,6 +31,12 @@ namespace LFDI_Demonstration_GUI
         string[] compensator2 = null;
         string[] compensator3 = null;
         System.Timers.Timer HK_Timer = new System.Timers.Timer(2000);
+        System.Timers.Timer Stage1VoltageTimer = new System.Timers.Timer(500);
+        System.Timers.Timer Stage2VoltageTimer = new System.Timers.Timer(500);
+        System.Timers.Timer Stage3VoltageTimer = new System.Timers.Timer(500);
+        bool updatingStage1 = false;
+        bool updatingStage2 = false;
+        bool updatingStage3 = false;
         string slope = "0.04";
         string intercept = "-655.27";
 
@@ -40,6 +46,14 @@ namespace LFDI_Demonstration_GUI
         {   //Define Serial Port for Connection
 
             InitializeComponent();
+            
+            // Initialize voltage timers
+            Stage1VoltageTimer.Elapsed += Stage1VoltageTimer_Elapsed;
+            Stage1VoltageTimer.AutoReset = false;
+            Stage2VoltageTimer.Elapsed += Stage2VoltageTimer_Elapsed;
+            Stage2VoltageTimer.AutoReset = false;
+            Stage3VoltageTimer.Elapsed += Stage3VoltageTimer_Elapsed;
+            Stage3VoltageTimer.AutoReset = false;
             //formsPlot1 = new() { Dock = DockStyle.Fill };
             //this.Controls.Add(formsPlot1);
 
@@ -104,11 +118,6 @@ namespace LFDI_Demonstration_GUI
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
 
         private void TempControlBox_Enter(object sender, EventArgs e)
         {
@@ -122,7 +131,10 @@ namespace LFDI_Demonstration_GUI
                 port.Close();
             }
             catch { }
-            port = new SerialPort(PortSelector.SelectedItem.ToString());
+            if (PortSelector.SelectedItem != null)
+            {
+                port = new SerialPort(PortSelector.SelectedItem.ToString() ?? "COM1");
+            }
             port.BaudRate = 9200;
             //port.ReadTimeout = 3;
             port.WriteTimeout = 100;
@@ -153,7 +165,8 @@ namespace LFDI_Demonstration_GUI
             }
             catch
             {
-                ComStatus.Text = "Status: Unable to open port" + PortSelector.SelectedItem.ToString();
+                string portName = PortSelector.SelectedItem?.ToString() ?? "Unknown";
+                ComStatus.Text = "Status: Unable to open port " + portName;
             }
         }
 
@@ -301,7 +314,7 @@ namespace LFDI_Demonstration_GUI
         {
             if (port.IsOpen)
             {
-                string command = null;
+                string? command = null;
                 if (button6.Text == "Heater On")
                 {
                     command = "SET_HEATER_ON";
@@ -315,9 +328,12 @@ namespace LFDI_Demonstration_GUI
                     button6.Text = "Heater On";
                     button6.BackColor = DefaultBackColor;
                 }
-                while (portLocked) ; portLocked = true;
-                port.WriteLine(command);
-                portLocked = false;
+                if (command != null)
+                {
+                    while (portLocked) ; portLocked = true;
+                    port.WriteLine(command);
+                    portLocked = false;
+                }
 
             }
         }
@@ -326,7 +342,7 @@ namespace LFDI_Demonstration_GUI
         {
             if (port.IsOpen)
             {
-                string command = null;
+                string? command = null;
                 if (button8.Text == "Tuning On")
                 {
                     command = "SET_TUNE_ON";
@@ -340,9 +356,12 @@ namespace LFDI_Demonstration_GUI
                     button8.Text = "Tuning On";
                     button8.BackColor = DefaultBackColor;
                 }
-                while (portLocked) ; portLocked = true;
-                port.WriteLine(command);
-                portLocked = false;
+                if (command != null)
+                {
+                    while (portLocked) ; portLocked = true;
+                    port.WriteLine(command);
+                    portLocked = false;
+                }
             }
         }
 
@@ -353,7 +372,7 @@ namespace LFDI_Demonstration_GUI
 
         public bool get_hk()
         {
-            string response = null;
+            string? response = null;
             if (port.IsOpen)
             {
                 //Clear the Data
@@ -364,8 +383,10 @@ namespace LFDI_Demonstration_GUI
                 System.Threading.Thread.Sleep(100);//Wait .1 sec allow time for print out
                 response = port.ReadExisting();
 
-
-                parse_hk(response);
+                if (response != null)
+                {
+                    parse_hk(response);
+                }
             }
             return portLocked;
 
@@ -388,15 +409,20 @@ namespace LFDI_Demonstration_GUI
         //Stagesize is the current stagesize in 2.2f format
         public void parse_hk(string response)
         {
+            if (string.IsNullOrEmpty(response))
+                return;
+
             string[] lines = response.Split('\n');
-            heater1 = lines[0].Split('\t');
-            heater2 = lines[1].Split('\t');
-            heater3 = lines[2].Split('\t');
+            if (lines.Length >= 6)
+            {
+                heater1 = lines[0].Split('\t');
+                heater2 = lines[1].Split('\t');
+                heater3 = lines[2].Split('\t');
 
-            compensator1 = lines[3].Split('\t');
-            compensator2 = lines[4].Split('\t');
-            compensator3 = lines[5].Split('\t');
-
+                compensator1 = lines[3].Split('\t');
+                compensator2 = lines[4].Split('\t');
+                compensator3 = lines[5].Split('\t');
+            }
 
             //Heater 1
             if (HeaterDataGrid.InvokeRequired)
@@ -414,17 +440,17 @@ namespace LFDI_Demonstration_GUI
         private void UpdateCompesatorDataGrid() {
 
             CompensatorDataGrid.Rows.Clear();
-            CompensatorDataGrid.Rows.Add(compensator1);
-            CompensatorDataGrid.Rows.Add(compensator2);
-            CompensatorDataGrid.Rows.Add(compensator3);
+            if (compensator1 != null) CompensatorDataGrid.Rows.Add(compensator1);
+            if (compensator2 != null) CompensatorDataGrid.Rows.Add(compensator2);
+            if (compensator3 != null) CompensatorDataGrid.Rows.Add(compensator3);
         }
 
         private void UpdateHeaterDataGrid()
         {
             HeaterDataGrid.Rows.Clear();
-            HeaterDataGrid.Rows.Add(heater1);
-            HeaterDataGrid.Rows.Add(heater2);
-            HeaterDataGrid.Rows.Add(heater3);
+            if (heater1 != null) HeaterDataGrid.Rows.Add(heater1);
+            if (heater2 != null) HeaterDataGrid.Rows.Add(heater2);
+            if (heater3 != null) HeaterDataGrid.Rows.Add(heater3);
         }
 
         private void button5_Click_1(object sender, EventArgs e)
@@ -526,54 +552,149 @@ namespace LFDI_Demonstration_GUI
 
         private void VoltageSetButton_Click(object sender, EventArgs e)
         {
-            string command = null;
-            if (button8.Text == "Stop Tuning")
+            // This method is kept for backward compatibility but is no longer used
+            // Voltage is now controlled via sliders with automatic sending
+        }
+
+        private void SendVoltageCommandForStage(int stageNumber, decimal voltage)
+        {
+            if (port.IsOpen)
             {
-                command = "SET_TUNE_OFF";
-                button8.Text = "Tuning On";
-                button8.BackColor = DefaultBackColor;
-                while (portLocked) ; portLocked = true;
+                string command = "SET_VOLTAGE_" + stageNumber + "_" + voltage.ToString("F2");
+                while (portLocked) ;
+                portLocked = true;
                 port.WriteLine(command);
                 portLocked = false;
             }
-            
-            if (port.IsOpen)
+        }
+
+        // Stage 1 Slider and Numeric handlers
+        private void Stage1Slider_Scroll(object sender, EventArgs e)
+        {
+            if (!updatingStage1)
             {
-
-                float f;
-                command = "SET_VOLTAGE_";
-                if (float.TryParse(VoltageSetBox.Text, out f))
-                {
-
-                    if (Stage1CheckBox.Checked)
-                    {
-                        SendVoltageControlCommand(command, "1_");
-
-                    }
-                    if (Stage2CheckBox.Checked)
-                    {
-                        SendVoltageControlCommand(command, "2_");
-
-                    }
-                    if (Stage3CheckBox.Checked)
-                    {
-                        SendVoltageControlCommand(command, "3_");
-
-                    }
-
-                }
+                updatingStage1 = true;
+                decimal value = (decimal)Stage1Slider.Value / 100m;
+                Stage1VoltageNumeric.Value = Math.Min(Math.Max(value, 0), 18);
+                updatingStage1 = false;
+                
+                // Reset and start timer for delayed command
+                Stage1VoltageTimer.Stop();
+                Stage1VoltageTimer.Start();
             }
         }
-        private void SendVoltageControlCommand(string command, string stage)
+
+        private void Stage1VoltageNumeric_ValueChanged(object sender, EventArgs e)
         {
-            command += stage;
+            if (!updatingStage1)
+            {
+                updatingStage1 = true;
+                int sliderValue = (int)Math.Round(Stage1VoltageNumeric.Value * 100);
+                Stage1Slider.Value = Math.Min(Math.Max(sliderValue, 0), 1800);
+                updatingStage1 = false;
+                
+                // Reset and start timer for delayed command
+                Stage1VoltageTimer.Stop();
+                Stage1VoltageTimer.Start();
+            }
+        }
 
-            command += VoltageSetBox.Text;
-            while (portLocked) ;
-            portLocked = true;
-            port.WriteLine(command);
-            portLocked = false;
+        private void Stage1VoltageTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => SendVoltageCommandForStage(1, Stage1VoltageNumeric.Value)));
+            }
+            else
+            {
+                SendVoltageCommandForStage(1, Stage1VoltageNumeric.Value);
+            }
+        }
 
+        // Stage 2 Slider and Numeric handlers
+        private void Stage2Slider_Scroll(object sender, EventArgs e)
+        {
+            if (!updatingStage2)
+            {
+                updatingStage2 = true;
+                decimal value = (decimal)Stage2Slider.Value / 100m;
+                Stage2VoltageNumeric.Value = Math.Min(Math.Max(value, 0), 18);
+                updatingStage2 = false;
+                
+                // Reset and start timer for delayed command
+                Stage2VoltageTimer.Stop();
+                Stage2VoltageTimer.Start();
+            }
+        }
+
+        private void Stage2VoltageNumeric_ValueChanged(object sender, EventArgs e)
+        {
+            if (!updatingStage2)
+            {
+                updatingStage2 = true;
+                int sliderValue = (int)Math.Round(Stage2VoltageNumeric.Value * 100);
+                Stage2Slider.Value = Math.Min(Math.Max(sliderValue, 0), 1800);
+                updatingStage2 = false;
+                
+                // Reset and start timer for delayed command
+                Stage2VoltageTimer.Stop();
+                Stage2VoltageTimer.Start();
+            }
+        }
+
+        private void Stage2VoltageTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => SendVoltageCommandForStage(2, Stage2VoltageNumeric.Value)));
+            }
+            else
+            {
+                SendVoltageCommandForStage(2, Stage2VoltageNumeric.Value);
+            }
+        }
+
+        // Stage 3 Slider and Numeric handlers
+        private void Stage3Slider_Scroll(object sender, EventArgs e)
+        {
+            if (!updatingStage3)
+            {
+                updatingStage3 = true;
+                decimal value = (decimal)Stage3Slider.Value / 100m;
+                Stage3VoltageNumeric.Value = Math.Min(Math.Max(value, 0), 18);
+                updatingStage3 = false;
+                
+                // Reset and start timer for delayed command
+                Stage3VoltageTimer.Stop();
+                Stage3VoltageTimer.Start();
+            }
+        }
+
+        private void Stage3VoltageNumeric_ValueChanged(object sender, EventArgs e)
+        {
+            if (!updatingStage3)
+            {
+                updatingStage3 = true;
+                int sliderValue = (int)Math.Round(Stage3VoltageNumeric.Value * 100);
+                Stage3Slider.Value = Math.Min(Math.Max(sliderValue, 0), 1800);
+                updatingStage3 = false;
+                
+                // Reset and start timer for delayed command
+                Stage3VoltageTimer.Stop();
+                Stage3VoltageTimer.Start();
+            }
+        }
+
+        private void Stage3VoltageTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => SendVoltageCommandForStage(3, Stage3VoltageNumeric.Value)));
+            }
+            else
+            {
+                SendVoltageCommandForStage(3, Stage3VoltageNumeric.Value);
+            }
         }
     }
     
